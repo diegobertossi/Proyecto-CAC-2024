@@ -1,0 +1,335 @@
+:root {
+  /* configuración de colores */
+  --GradienteCelesteBlanco: linear-gradient(
+    0deg,
+    rgba(255, 255, 255) 0%,
+    rgba(117, 170, 219) 100%
+  );
+  --GradienteBlancoCeleste: linear-gradient(
+    0deg,
+    rgba(117, 170, 219) 0%,
+    rgba(255, 255, 255) 100%
+  );
+  --celeste: rgba(117, 170, 219);
+  --celesteMasClaro: #3ac3e8;
+  --celesteTurquesa: #00d9dd;
+  --celesteClarisimo: #55ebbc;
+  --verde: #a7f691;
+  --amarillo: #f9f871;
+  --azulClaro:#002E55;
+
+  --bg-color: #fdede3;
+
+  --primary-font: #190eb4ec;
+  --doradoBandera: #fcbf49;
+  --secondary-color: #fdede3;
+  --third-color: #db4648;
+  --third-bis-color: #db4648f2;
+  /*colores de fondo*/
+
+  --bg-input-color: hwb(9 1% 44% / 0.575);
+  /*fuente primaria*/
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+
+  font-family: "Noto Serif", sans-serif;
+}
+@keyframes shaking {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(5px, 5px) rotate(5deg);
+  }
+  50% {
+    transform: translate(0, 0) rotate(0eg);
+  }
+  75% {
+    transform: translate(-5px, 5px) rotate(-5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+@keyframes animLogo{
+  from {
+      -webkit-transform: rotate(0deg);
+      transform: rotateY(0deg);
+  }
+  50%{
+      -webkit-transform: rotate(180deg);
+      transform: rotateY(180deg);
+  } to {
+      -webkit-transform: rotate(360deg);
+      transform: rotateY(360deg);
+      }
+}
+
+
+@keyframes bouncing {
+  0%, 100% {
+    transform: translateY(0);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: translateY(-100px);
+    animation-timing-function: ease-out;
+  }
+}
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes scaleAndColorChange {
+  0% {
+    transform: scale(1);
+    background-color: blue;
+  }
+  100% {
+    transform: scale(2);
+    background-color: green;
+  }
+}
+
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+
+
+}
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(23, 23, 23);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--GradienteCelesteBlanco);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--GradienteBlancoCeleste);
+}
+body {
+  background-color: var(--bg-color);
+  color: var(--primary-font);
+
+  scrollbar-width: thin;
+}
+
+
+
+
+
+/*ESTILOS HEADER PARA ESCRITORIO*/
+.header {
+  background: var(--GradienteBlancoCeleste);
+  color: #ffffff;
+  height: 15vhd;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  .navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 1rem;
+    .logoC {
+      text-decoration: none;
+      color: var(--primary-font);
+      font-weight: bold;
+      font-size: 1.2rem;
+      /*animacion hover*/
+      &:hover {
+        animation: heartbeat 2s infinite alternate;
+      }
+    }
+    .listaNav {
+     
+      list-style: none;
+      display: flex;
+      align-items: center;
+      .listaItem {
+        padding: 0.4rem 0.4rem;
+        margin-right: 3rem; 
+       
+        
+        .linkNav {
+          
+          text-decoration: none;
+        
+          color: var(--primary-font);
+          font-weight: bold;
+          font-size: 0.9rem;
+          padding:0.5rem 0.5rem;
+          /* Agregar efecto de botón presionado */
+          transition: transform 0.3s, box-shadow 0.3s;
+          &:hover {
+            transform: scale(0.95);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+            border-radius: 5px;
+          }
+        }
+        .linkNav.Login {
+          background-color: var(--azulClaro);
+          color: white;
+          border-radius: 5px;
+          padding-inline: 2rem;
+          transition: transform 0.3s, box-shadow 0.3s;
+          &:hover {
+            background-color: var(--celeste);
+          }
+        }
+      }
+    }
+  }
+}
+
+.header ul li .dropdown-content {
+   
+  position: absolute;
+  z-index: 2;
+
+  top: 3.1rem; 
+  right: 0.4rem;
+  transition: all 0.5s;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+
+  /* display: block; con eso hace lo mismo */
+  opacity: 0;
+  background: var(--GradienteCelesteBlanco);
+}
+
+.header ul {
+  position: relative;
+  padding-left: 2rem;
+  }
+
+/* Mostrar el menú desplegable al hacer hover sobre el enlace */
+.header ul li:hover .dropdown-content {
+  opacity: 1;
+}
+
+/* Estilos para los elementos del menú desplegable */
+
+/* header ul li .dropdown-content li {
+  
+
+} */
+
+.header ul li .dropdown-content li{
+
+  text-decoration: none;
+  list-style: none;
+  
+}
+
+
+.main {
+  .inicio {
+    background-image: url(../img/argentina-world.jpg);
+    background-size: cover;
+    background-position: top;
+    height: 100vhd;
+    box-shadow: inset 0 0 0 2000px rgba(84, 84, 84, 0.5);
+
+    .titulo_H1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 15rem;
+    }
+
+    color: white;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .btn-Registrarse {
+      background-color: var(--azulClaro);
+      color: #ffffff;
+      padding: 0.7rem 1rem;
+      margin: 10px;
+      border-radius: 5px;
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-decoration: none;
+      /* Agregar efecto de botón presionado */
+      transition: transform 0.3s, box-shadow 0.3s;
+      &:hover {
+        background-color: var(--celeste);
+        transform: scale(0.95);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+      }
+    }
+
+    .titulo_H3 {
+      font-size: 1rem;
+      font-weight: normal;
+      color: var(--secondary-color);
+      padding: 10px;
+      background-color: rgba(80, 80, 80, 0.5);
+      border-radius: 5px;
+    }
+  }
+}
