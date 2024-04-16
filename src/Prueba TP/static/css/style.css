@@ -16,7 +16,7 @@
   --celesteClarisimo: #55ebbc;
   --verde: #a7f691;
   --amarillo: #f9f871;
-  --azulClaro:#002E55;
+  --azulClaro: #002e55;
 
   --bg-color: #fdede3;
 
@@ -31,12 +31,9 @@
   /*fuente primaria*/
 }
 
-
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;  
-
   font-family: "Noto Serif", sans-serif;
 }
 @keyframes shaking {
@@ -69,24 +66,24 @@
   }
 }
 
-
-@keyframes animLogo{
+@keyframes animLogo {
   from {
-      -webkit-transform: rotate(0deg);
-      transform: rotateY(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotateY(0deg);
   }
-  50%{
-      -webkit-transform: rotate(180deg);
-      transform: rotateY(180deg);
-  } to {
-      -webkit-transform: rotate(360deg);
-      transform: rotateY(360deg);
-      }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotateY(180deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotateY(360deg);
+  }
 }
 
-
 @keyframes bouncing {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
     animation-timing-function: ease-in;
   }
@@ -96,7 +93,6 @@
   }
 }
 
-
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -105,7 +101,6 @@
     transform: rotate(360deg);
   }
 }
-
 
 @keyframes scaleAndColorChange {
   0% {
@@ -117,7 +112,6 @@
     background-color: green;
   }
 }
-
 
 @keyframes heartbeat {
   0% {
@@ -135,12 +129,6 @@
   100% {
     transform: scale(1);
   }
-
-
-}
-@keyframes example {
-  from {background-color: red;}
-  to {background-color: yellow;}
 }
 
 /* width */
@@ -169,12 +157,10 @@ body {
   scrollbar-width: thin;
 }
 
-
-
-
-
 /*ESTILOS HEADER PARA ESCRITORIO*/
+
 .header {
+  
   background: var(--GradienteBlancoCeleste);
   color: #ffffff;
   height: 15vhd;
@@ -199,23 +185,20 @@ body {
       }
     }
     .listaNav {
-     
       list-style: none;
       display: flex;
+      justify-content: right;
       align-items: center;
       .listaItem {
-        padding: 0.4rem 0.4rem;
-        margin-right: 3rem; 
-       
-        
+        padding: 0.4rem;
+        margin-right: 2rem;
+
         .linkNav {
-          
           text-decoration: none;
-        
           color: var(--primary-font);
           font-weight: bold;
           font-size: 0.9rem;
-          padding:0.5rem 0.5rem;
+          padding: 0.5rem 0.5rem;
           /* Agregar efecto de botón presionado */
           transition: transform 0.3s, box-shadow 0.3s;
           &:hover {
@@ -240,20 +223,18 @@ body {
 }
 
 .header ul li .dropdown-content {
-   
   position: absolute;
   z-index: 2;
 
-  top: 3.1rem; 
+  top: 3.1rem;
   right: 0.4rem;
   transition: all 0.5s;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-  /* display: block; con eso hace lo mismo */
   opacity: 0;
   background: var(--GradienteCelesteBlanco);
 }
@@ -261,27 +242,18 @@ body {
 .header ul {
   position: relative;
   padding-left: 2rem;
-  }
+}
 
 /* Mostrar el menú desplegable al hacer hover sobre el enlace */
 .header ul li:hover .dropdown-content {
   opacity: 1;
 }
 
-/* Estilos para los elementos del menú desplegable */
 
-/* header ul li .dropdown-content li {
-  
-
-} */
-
-.header ul li .dropdown-content li{
-
+.header ul li .dropdown-content li {
   text-decoration: none;
   list-style: none;
-  
 }
-
 
 .main {
   .inicio {
