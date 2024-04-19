@@ -9,38 +9,39 @@
     <title>Campeones del Mundo</title>
     <!-- vinculación con google-fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 
     <!-- vinculación fontawesome -->
-    <!-- <script
+    <script
       src="https://kit.fontawesome.com/f7fb471b65.js"
       crossorigin="anonymous"
-    ></script> -->
+    ></script>
     
   </head>
 
   <body>
        <!-- Encabezado -->
       <header class="header">
-        <nav class="navegacion">
+        <nav>
           <!-- Logo -->
-          
-            <a class="logoC" href="#">
-              <!-- <i class="fa-solid fa-futbol"></i>  -->
-              <span>CAMPEONES DEL MUNDO</span>
+          <div id="logo">
+            <a href="/">
+              <i class="fa-solid fa-futbol"></i> 
+              <span class="logo-text">CAMPEONES DEL MUNDO</span>
             </a>
       
+          </div>
 
           <!-- hipervínculos del menú -->
           <ul class="listaNav">
-            <li class="listaItem"><a class="linkNav" href="#">Inicio</a></li>
-            <li class="listaItem"><a class="linkNav" href="#">Galería</a></li>
-            <li class="listaItem"><a class="linkNav" href="#">Productos</a></li>
-            <li class="listaItem"><a class="linkNav" href="#">Quienes Somos</a></li>
-            <li class="listaItem"><a class="linkNav" href="#">Contacto</a></li>
-            <li class="listaItem"><a class="linkNav Login" href="#">Login</a>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Galería</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Quienes Somos</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a class="linkNav Login" href="#">Login</a>
               <!-- menu desplegable -->
               <ul class="dropdown-content">
                 <li class="listaItem"><a class="linkNav" href="#">Iniciar sesión</a></li>
@@ -54,18 +55,16 @@
       </header>
 
       <!-- Contenido -->
-      <main class="main">
-        <section id="banner" class="inicio">
+      <main>
+        <section id="banner" class="d-flex">
           
-
-            <h1 class="titulo_H1">ARGENTINA CAMPEÓN DEL MUNDO<br>2022</h1>
-            
-              <a href="./templates/register.html" class="btn-Registrarse">Registrate</a>
-              
-              <h3 class="titulo_H3">Registrate para comprar productos de la Selección Argentina</h3>
+          <div class="card-banner container">
+            <h1>ARGENTINA CAMPEÓN DEL MUNDO<br>2022</h1>
+            <a href="./templates/register.html" class="btn-Registrarse">Registrate</a>
+            <h2 class="titulo_h2">Registrate para comprar productos de la Selección Argentina</h2>
             
             <!-- <video class="video_penal_montiel" src="./static/video/space_mid.mp4"></video> -->
-            
+          </div>
           
         </section>
 
