@@ -95,17 +95,17 @@ a {
   text-decoration: none;
 }
 
-
-
-
-
-
 #logo {
   font-weight: bold;
 }
 
+h2 {
+  color: #fff;
+  font-size: 2vw;
+}
+
 body {
-  background-color: var(--bg-color);
+  background-color: var(--GradienteBlancoCeleste);
   font-family: "Noto Serif", sans-serif;
 }
 
@@ -113,22 +113,39 @@ body {
   background-color: var(--third-color);
 }
 
-#banner {
-  background-image: url("../img/argentina-world.jpg");
+.movie-item-img {
+  width: 200px;
+  height: 300px;
+  -o-object-fit: cover; 
+  object-fit: cover;
+}
 
+#banner {
+  
+  margin-top: 5rem;
+  background-image: url("../img/argentina-world.jpg");
   background-size: cover;
   background-position: top;
-  height: 100vh;
+  height: 91vh;
   box-shadow: inset 0 0 0 2000px rgba(84, 84, 84, 0.5);
 
+  color: white;
+ 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+
+
 }
 
+
+
+
+
 .header {
+
   background: var(--GradienteBlancoCeleste);
   color: #ffffff;
   position: fixed;
@@ -138,11 +155,22 @@ body {
   z-index: 9999;
 }
 
-
+.btn-Registrarse {
+  background-color: var(--primary-color);
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+}
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.card-banner {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0px 160px;
 }
 
 .header ul li .dropdown-content {
@@ -199,7 +227,7 @@ body {
   }
 }
 
-.linkNav.Login {
+.linkNav .Login {
   background-color: var(--celeste);
   color: white;
   border-radius: 5px;
@@ -215,13 +243,6 @@ body {
   padding: 0.5rem;
   transition: transform 0.3s, box-shadow 0.3s;
 }
-
-/* Alinea al centro el botón de registrarse */
-/* .card-banner {
-  margin: 0 auto;
-  text-align: center;
-  padding: 0px 100px;
-} */
 
 .input-search {
   background-color: var(--bg-input-color);
@@ -244,7 +265,7 @@ body {
   overflow-y: auto;
   line-height: 15px;
   position: absolute;
-  background-color: var(--third-bis-color);
+  background-color: var(--celesteMasClaro);
   box-sizing: border-box;
   transition: bottom 0.4s ease-in-out;
   width: 100%;
@@ -261,7 +282,7 @@ body {
   margin: 3px 0px;
 }
 
-#top-rated {
+#productos {
   margin: 50px 0px;
 }
 /* 
@@ -281,6 +302,12 @@ body {
   transform-origin: center left;
 }
 
+
+.movie-item-v2:hover {
+ transform: scale(1.1);
+}
+
+
 .wrapper {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -297,23 +324,24 @@ body {
   object-fit: cover;
 }
 
-.movie-item-detail-v2 {
-  align-items: flex-start;
+/* .movie-item-detail-v2 {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-}
+  justify-content: center;
+} */
 
 .movie-item-detail-title-v2 {
-  color: white;
-  font-weight: bold;
-  margin: 5px 0px 0px 0px;
-}
+  color: black;
+  font-size: 14px;
+  }
 
 .movie-item-detail-subtitle-v2 {
-  color: white;
-  font-size: 12px;
-  margin: 3px 0px;
+
+  color: black;
+  font-weight: bold;
+  padding: 10px 20px;
+
 }
 
 /* CSS 4 - Selectores avanzados y Animaciones. Selectores avanzados. 
@@ -337,14 +365,13 @@ repetitivo, mejorando la interacción visual cuando se interactúa con ese eleme
   background-color: var(--azulClaro);
   color: #ffffff;
   padding: 0.5rem 1rem;
-  margin-top: 5rem; 
+  margin-top: 5rem;
   border-radius: 5px;
   font-size: 1.2rem;
   font-weight: bolder;
   text-decoration: none;
   /* Agregar efecto de botón presionado */
   transition: transform 0.3s, box-shadow 0.3s;
-  
 }
 
 .btn-Registrarse:hover {
@@ -353,38 +380,40 @@ repetitivo, mejorando la interacción visual cuando se interactúa con ese eleme
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
-
-
-
-
 .card-banner h1 {
   color: #fff;
-  font-size: 3vw;
+  font-size: 4vw;
   margin-top: 2rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
 }
 .card-banner h2 {
-  margin-top: 1rem;
-  font-size: 1rem;
+
+  font-size: 1.5vw;
   font-weight: normal;
-  color: var(--secondary-color);
-  padding: 10px;
-  background-color: rgba(80, 80, 80, 0.5);
-  border-radius: 5px;
+  margin-top: 1rem;
+
 }
 
-#popular,
-#top-rated {
+#galeria,
+#productos
+{
+ 
   text-align: center;
 }
 
-#popular h2,
-#top-rated h2 {
+#galeria h2,
+#productos h2,
+#quienes-somos h2{
+  
+  color:var(--azulClaro);
   margin: 30px 0px;
+  text-align: center;
 }
 
 .movie-item {
-  border-radius: 20px;
+
+  border-radius: 50px;
   overflow: hidden;
   position: relative;
   display: inline-block;
@@ -397,10 +426,12 @@ repetitivo, mejorando la interacción visual cuando se interactúa con ese eleme
   transform-origin: center left;
 }
 
+
+
 /* Efecto que ocurre al pasar el cursor sube una ventana en 
 cada imagen de cada película y muestra los detalles */
 .movie-item:hover {
-  opacity: 0.9;
+  opacity: 0.7;
 }
 
 .movie-item:hover .movie-item-detail {
@@ -413,17 +444,42 @@ cada imagen de cada película y muestra los detalles */
   content: "🌟";
 }
 
+#quienes-somos p{
+  margin: 1rem 5%;
+}
+
+.titulo{
+  background-color: rgb(225 225 225); 
+
+  color:var(--azulClaro);
+
+  border-color: #002e55;
+
+  border-radius: 20px 20px 0px 0px;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  line-height: 2rem;
+  /* padding: 1rem 1rem 5rem 5 rem; */
+}
+.fondotexto{
+  height: 25px;
+  background-color: #c1c2c8;
+  border-radius: 0px 0px 20px 20px;
+  margin-bottom: 50px;
+}
+
 #footer a {
-  color: white;
+  color: var(--azulClaro);
   cursor: pointer;
   font-size: 14px;
+  font-weight: bold;
   padding-left: 30px;
   text-decoration: none;
 }
 
 #footer a:hover {
   text-decoration: underline;
-  color: var(--secondary-color);
+  color: blue;
 }
 
 /* Estilos a los nombres de las películas que 
@@ -435,11 +491,12 @@ están en la sección  */
 /* CSS 5. Flexbox. Media Queries. ¿Qué es Flexbox?
 Propiedades para el contenedor Flex, y los Flex items ---------------------*/
 #footer {
-  align-items: center;
-  background-color: var(--third-color);
-  display: flex;
-  height: 100px;
-  width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--celeste);
+    height: 100px;
+    width: 100%;
 }
 
 #search {
@@ -455,12 +512,21 @@ Propiedades para el contenedor Flex, y los Flex items ---------------------*/
   h2 {
     font-size: 3vw;
   }
-  .login-text {
-    display: none;
-  }
+
   .logo-text {
     display: none;
   }
+   
+  .header nav {
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    padding: 10px 10px;
+  }
+
   #banner {
     height: 400px;
   }
@@ -469,6 +535,7 @@ Propiedades para el contenedor Flex, y los Flex items ---------------------*/
   }
   .container {
     max-width: 720px;
+    
   }
   .card-banner {
     padding: 0px 75px;
@@ -490,12 +557,25 @@ Propiedades para el contenedor Flex, y los Flex items ---------------------*/
   .h2-subtitle {
     font-size: 5vw;
   }
-  .login-text {
-    display: none;
-  }
+
   .logo-text {
+    font-size: 1.8vh;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  
+  .header ul .lista {
     display: none;
   }
+  .header ul .linkNav {
+    font-size: 1.5vh;
+    margin-left: 0px;
+    display: flex;
+    list-style: none;
+    padding: 0.5rem 0.5rem;
+  }
+
   #banner {
     height: 300px;
   }
@@ -506,10 +586,11 @@ Propiedades para el contenedor Flex, y los Flex items ---------------------*/
     max-width: 420px;
   }
   .card-banner {
+    margin-top: 50px;
     padding: 0px 50px;
   }
 
-  .btn-cac {
+  .btn-Registrarse {
     font-size: 1vh;
   }
   #footer {
@@ -533,12 +614,12 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  padding: 10px 70px;
+  padding: 10px 10px;
 }
 
 .listaNav {
   display: flex;
-  gap: 30px;
+  gap: 2vw;
   list-style: none;
   padding: 0 4rem;
 }
@@ -577,6 +658,8 @@ y series ilimitadas */
   -webkit-transform-origin: center left;
   transform-origin: center left;
 }
+
+
 
 .movie-item-detail-v2 {
   align-items: flex-start;
