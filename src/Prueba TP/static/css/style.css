@@ -126,7 +126,7 @@ body {
   background-image: url("../img/argentina-world.jpg");
   background-size: cover;
   background-position: top;
-  height: 91vh;
+  height: 92vh;
   box-shadow: inset 0 0 0 2000px rgba(84, 84, 84, 0.5);
 
   color: white;
@@ -141,9 +141,6 @@ body {
 }
 
 
-
-
-
 .header {
 
   background: var(--GradienteBlancoCeleste);
@@ -153,6 +150,16 @@ body {
   left: 0;
   width: 100%;
   z-index: 9999;
+  
+}
+
+#header nav{
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 10vh;
+
 }
 
 .btn-Registrarse {
@@ -400,6 +407,7 @@ repetitivo, mejorando la interacción visual cuando se interactúa con ese eleme
 {
  
   text-align: center;
+  padding: 3.5rem;
 }
 
 #galeria h2,
@@ -495,9 +503,29 @@ Propiedades para el contenedor Flex, y los Flex items ---------------------*/
     justify-content: center;
     align-items: center;
     background-color: var(--celeste);
-    height: 100px;
+    height: 10vh;
     width: 100%;
 }
+
+/* .footer-contacto{
+
+  height: 15vh;
+
+} */
+
+#form-wrapper{
+
+display: flex;
+justify-content: center;
+align-items: center;
+/* padding: 3.5rem;  */
+/* margin-top: 60px; */
+/* width: 90vw; */
+height:90vh;
+/* padding: 1rem; */
+
+}
+
 
 #search {
   height: 300px;
