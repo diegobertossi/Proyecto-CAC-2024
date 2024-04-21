@@ -95,9 +95,29 @@ a {
   text-decoration: none;
 }
 
-#logo {
+
+#logo a {
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-decoration: none;
+  color: var(--azulClaro);
   font-weight: bold;
+  font-size: 1.2rem;
+  margin-left: 2rem;
+
+
 }
+
+
+/* Al pasar el cursor sobre el elemento #logo, se activa una
+animación que produce un efecto visual de sacudida y giro
+repetitivo, mejorando la interacción visual cuando se interactúa con ese elemento. */
+#logo:hover {
+  animation: heartbeat 2s infinite;
+}
+
 
 h2 {
   color: #fff;
@@ -120,13 +140,13 @@ body {
   object-fit: cover;
 }
 
-#banner {
+#banner{
   
   margin-top: 5rem;
   background-image: url("../img/argentina-world.jpg");
   background-size: cover;
   background-position: top;
-  height: 92vh;
+  height: 90vh;
   box-shadow: inset 0 0 0 2000px rgba(84, 84, 84, 0.5);
 
   color: white;
@@ -140,6 +160,25 @@ body {
 
 }
 
+#banner-register{
+  
+  margin-top: 5rem;
+  background-image: url("../img/argentina-world.jpg");
+  background-size: cover;
+  background-position: top;
+  height: 77vh;
+  box-shadow: inset 0 0 0 2000px rgba(84, 84, 84, 0.5);
+
+  /* color: white; */
+ 
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* text-align: center; */
+
+
+}
 
 .header {
 
@@ -354,19 +393,7 @@ body {
 /* CSS 4 - Selectores avanzados y Animaciones. Selectores avanzados. 
 Animaciones con CSS. Incorporación de transformaciones y transiciones
 a elementos. Introducción Responsive Web Design.  --------------------------------*/
-#logo a {
-  text-decoration: none;
-  color: var(--azulClaro);
-  font-weight: bold;
-  font-size: 1.2rem;
-}
 
-/* Al pasar el cursor sobre el elemento #logo, se activa una
-animación que produce un efecto visual de sacudida y giro
-repetitivo, mejorando la interacción visual cuando se interactúa con ese elemento. */
-#logo:hover {
-  animation: heartbeat 2s infinite;
-}
 
 .btn-Registrarse {
   background-color: var(--azulClaro);
@@ -483,6 +510,7 @@ cada imagen de cada película y muestra los detalles */
   font-weight: bold;
   padding-left: 30px;
   text-decoration: none;
+  
 }
 
 #footer a:hover {
@@ -505,26 +533,117 @@ Propiedades para el contenedor Flex, y los Flex items ---------------------*/
     background-color: var(--celeste);
     height: 10vh;
     width: 100%;
+  
 }
 
-/* .footer-contacto{
-
-  height: 15vh;
-
-} */
 
 #form-wrapper{
 
 display: flex;
-justify-content: center;
+/* justify-content: space-between; */
 align-items: center;
-/* padding: 3.5rem;  */
-/* margin-top: 60px; */
-/* width: 90vw; */
-height:90vh;
-/* padding: 1rem; */
+text-align: left;
+padding-left: 2rem;
+padding-right: 2.5rem;
+padding-bottom: 1rem;
+background-color:rgba(117, 170, 219,0.7);
+border-radius: 50px 5px;
+
 
 }
+
+#form-wrapper h2{
+
+font-size: 2rem;
+font-weight: bold;
+text-align: center;
+margin-bottom: 20px;
+
+}
+
+
+.form-control{
+  
+  /* display: flex; */
+  justify-content: space-between;
+  text-align: left;
+  color: white;
+  padding: 3px;
+  font-size: 16px;
+ 
+}
+
+.controls{
+
+  width: 100%;
+  background: white;
+  color: #000;
+  padding: 4px;
+  border-radius: 10px;
+  border: 1px solid var(--azulClaro);
+  font-family: "Noto Serif", sans-serif;
+  font-size: 14px;
+  color: black;
+
+}
+
+#date{
+  font-family: "Noto Serif", sans-serif;
+  display: flex;
+  text-align: center;
+  font-size: 14px;
+  width: 146px;
+  border-radius: 10px;
+  padding: 4px;
+}
+
+.form-control .form-select{
+  font-family: "Noto Serif", sans-serif;
+  display: flex;
+  text-align: center;
+  font-size: 14px;
+  width: 160px;
+  border-radius: 10px;
+  padding: 4px;
+  /* margin-left: 30px; */
+
+}
+
+.terms{
+
+  padding: 4px;
+  font-size: 0.8rem;
+  color: blanchedalmond;
+  font-family: "Noto Serif", sans-serif;
+
+}
+.btn{
+  font-size: 14px;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-family: "Noto Serif", sans-serif;
+  background-color: cornflowerblue;
+  color: white;
+  margin: 1rem;
+
+}
+.btn:hover{
+  cursor: pointer;
+  transition: 0.5s;
+  transform: scale(1.1);
+
+
+}
+
+.form-help{
+
+  
+  font-size: 0.8rem;
+  color: blanchedalmond;
+  font-family: "Noto Serif", sans-serif;
+
+}
+
 
 
 #search {
@@ -534,6 +653,19 @@ height:90vh;
   justify-content: center;
   align-items: center;
 }
+
+
+@media screen and (min-width: 1024) and (max-width: 2800px) {
+
+  
+  .logo-text {
+    display: none;
+  }
+   
+
+
+}
+
 
 /* TABLETS */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -592,6 +724,11 @@ height:90vh;
     margin-right: 0;
   }
 
+  #logo img {
+    
+    display: none;
+  }
+
   
   .header ul .lista {
     display: none;
@@ -621,6 +758,52 @@ height:90vh;
   .btn-Registrarse {
     font-size: 1vh;
   }
+
+
+  #form-wrapper{
+     
+    padding-left: 1rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.5rem;
+    background-color:rgba(117, 170, 219,0.7);
+    border-radius: 30px 2px;
+    
+    }
+
+
+    .controls{
+       font-size: 10px;
+    }
+
+    .form-control{
+  
+      padding: 2.5px;
+      font-size: 12px;
+     
+    }
+
+
+    .btn{
+      font-size: 12px;
+      padding: 0.5rem;
+      border-radius: 10px;
+      font-family: "Noto Serif", sans-serif;
+      background-color: cornflowerblue;
+      color: white;
+      margin: 0.7rem;
+    
+    }
+       
+    .form-help{
+    
+      
+      font-size: 0.8rem;
+      color: blanchedalmond;
+      font-family: "Noto Serif", sans-serif;
+      
+    
+    }
+
   #footer {
     flex-direction: column;
     align-items: center;
