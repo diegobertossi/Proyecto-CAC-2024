@@ -85,7 +85,13 @@ nav {
   font-size: 1.2rem;
   margin-left: 2rem;
 }
+.logo-text{
+  /* -webkit-text-stroke: 0.2px white; */
+  text-shadow: 0 -1px 4px #fff, 0 -1px 10px #fff, 0 -10px 20px #fff, 0 -18px 40px blue;
+  font-size: 18px;
+  font-weight: 800;
 
+}
 /* Al pasar el cursor sobre el elemento #logo, se activa una
 animación que produce un efecto visual de sacudida y giro
 repetitivo, mejorando la interacción visual cuando se interactúa con ese elemento. */
@@ -99,20 +105,27 @@ repetitivo, mejorando la interacción visual cuando se interactúa con ese eleme
   align-items: center;
 
 }
-
+.listaNav > li{
+  position: relative;
+}
 .listaNav a {
   text-decoration: none;
   color: var(--azulClaro);
   font-weight: bold;
   font-size: 0.9rem;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  display: flex;
 }
 
 .listaNav a:hover {
   color: var(--azulClaro);
   transform: scale(0.95);
   box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-  border-radius: 5px;
+  border-radius: 8px;
   padding: 0.5rem;
+  /* position: absolute; */
+  
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
