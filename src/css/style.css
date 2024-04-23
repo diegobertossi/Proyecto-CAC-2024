@@ -1,95 +1,15 @@
-:root {
-  /* configuración de colores */
-  --GradienteCelesteBlanco: linear-gradient(
-    0deg,
-    rgba(255, 255, 255) 0%,
-    rgba(117, 170, 219) 100%
-  );
-  --GradienteBlancoCeleste: linear-gradient(
-    0deg,
-    rgba(117, 170, 219) 0%,
-    rgba(255, 255, 255) 100%
-  );
-  --celeste: rgba(117, 170, 219);
-  --celesteMasClaro: #3ac3e8;
-  --celesteTurquesa: #00d9dd;
-  --celesteClarisimo: #55ebbc;
-  --verde: #a7f691;
-  --amarillo: #f9f871;
-  --azulClaro: #002e55;
+@import url("./base.css");
+@import url("./header.css");
+@import url("./test.css");
 
-  --bg-color: #fdede3;
 
-  --primary-font: #190eb4ec;
-  --doradoBandera: #fcbf49;
-  --secondary-color: #fdede3;
-  --third-color: #db4648;
-  --third-bis-color: #db4648f2;
-  /*colores de fondo*/
 
-  --bg-input-color: hwb(9 1% 44% / 0.575);
-  /*fuente primaria*/
-}
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: content-box;
-}
-@keyframes shaking {
-  0% {
-    transform: translate(0, 0) rotate(0deg);
-  }
-  25% {
-    transform: translate(5px, 5px) rotate(5deg);
-  }
-  50% {
-    transform: translate(0, 0) rotate(0eg);
-  }
-  75% {
-    transform: translate(-5px, 5px) rotate(-5deg);
-  }
-  100% {
-    transform: translate(0, 0) rotate(0deg);
-  }
-}
 
-@keyframes heartbeat {
-  0% {
-    transform: scale(1);
-  }
-  25% {
-    transform: scale(1.2);
-  }
-  50% {
-    transform: scale(1);
-  }
-  75% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: rgb(23, 23, 23);
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: var(--GradienteCelesteBlanco);
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: var(--GradienteBlancoCeleste);
+body {
+  background-color: var(--GradienteBlancoCeleste);
+  font-family: "Noto Serif", sans-serif;
 }
 
 a {
@@ -119,30 +39,24 @@ repetitivo, mejorando la interacción visual cuando se interactúa con ese eleme
   animation: heartbeat 2s infinite;
 }
 
-
+/*  */
 h2 {
   color: #fff;
   font-size: 2vw;
 }
 
-body {
-  background-color: var(--GradienteBlancoCeleste);
-  font-family: "Noto Serif", sans-serif;
-}
 
-.scrolled {
-  background-color: var(--third-color);
-}
+
 
 .movie-item-img {
   width: 200px;
   height: 300px;
-  -o-object-fit: cover; 
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
-#banner{
-  
+#banner {
+
   margin-top: 5rem;
   background-image: url("../img/argentina-world.jpg");
   background-size: cover;
@@ -151,7 +65,7 @@ body {
   box-shadow: inset 0 0 0 2000px rgba(84, 84, 84, 0.5);
 
   color: white;
- 
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -161,8 +75,8 @@ body {
 
 }
 
-#banner-register{
-  
+#banner-register {
+
   margin-top: 5rem;
   background-image: url("../img/argentina-world.jpg");
   background-size: cover;
@@ -171,7 +85,7 @@ body {
   box-shadow: inset 0 0 0 2000px rgba(84, 84, 84, 0.5);
 
   /* color: white; */
- 
+
   /* display: flex; */
   /* flex-direction: column; */
   /* justify-content: center; */
@@ -190,10 +104,10 @@ body {
   left: 0;
   width: 100%;
   z-index: 9999;
-  
+
 }
 
-#header nav{
+#header nav {
 
   display: flex;
   align-items: center;
@@ -268,6 +182,7 @@ body {
   list-style: none;
   display: flex;
   align-items: center;
+
   .listaItem {
     padding: 0.5rem;
     margin-right: 2rem;
@@ -332,6 +247,7 @@ body {
 #productos {
   margin: 50px 0px;
 }
+
 /* 
 <!-- Info de las películas mismo formato para todas --> */
 .movie-item-v2 {
@@ -351,7 +267,7 @@ body {
 
 
 .movie-item-v2:hover {
- transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 
@@ -381,7 +297,7 @@ body {
 .movie-item-detail-title-v2 {
   color: black;
   font-size: 14px;
-  }
+}
 
 .movie-item-detail-subtitle-v2 {
 
@@ -422,6 +338,7 @@ a elementos. Introducción Responsive Web Design.  -----------------------------
   margin-bottom: 3rem;
   /* margin-bottom: 3rem; */
 }
+
 .card-banner h2 {
 
   font-size: 1.5vw;
@@ -431,18 +348,17 @@ a elementos. Introducción Responsive Web Design.  -----------------------------
 }
 
 #galeria,
-#productos
-{
- 
+#productos {
+
   text-align: center;
   padding: 3.5rem;
 }
 
 #galeria h2,
 #productos h2,
-#quienes-somos h2{
-  
-  color:var(--azulClaro);
+#quienes-somos h2 {
+
+  color: var(--azulClaro);
   margin: 30px 0px;
   text-align: center;
 }
@@ -473,6 +389,7 @@ cada imagen de cada película y muestra los detalles */
 .movie-item:hover .movie-item-detail {
   bottom: 0;
 }
+
 */
 
 /* Agrega una estrella al lado del subtitulo */
@@ -480,14 +397,14 @@ cada imagen de cada película y muestra los detalles */
   content: "🌟";
 }
 
-#quienes-somos p{
+#quienes-somos p {
   margin: 1rem 5%;
 }
 
-.titulo{
-  background-color: rgb(225 225 225); 
+.titulo {
+  background-color: rgb(225 225 225);
 
-  color:var(--azulClaro);
+  color: var(--azulClaro);
 
   border-color: #002e55;
 
@@ -497,7 +414,8 @@ cada imagen de cada película y muestra los detalles */
   line-height: 2rem;
   /* padding: 1rem 1rem 5rem 5 rem; */
 }
-.fondotexto{
+
+.fondotexto {
   height: 25px;
   background-color: #c1c2c8;
   border-radius: 0px 0px 20px 20px;
@@ -511,7 +429,7 @@ cada imagen de cada película y muestra los detalles */
   font-weight: bold;
   padding-left: 30px;
   text-decoration: none;
-  
+
 }
 
 #footer a:hover {
@@ -528,53 +446,53 @@ están en la sección  */
 /* CSS 5. Flexbox. Media Queries. ¿Qué es Flexbox?
 Propiedades para el contenedor Flex, y los Flex items ---------------------*/
 #footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--celeste);
-    height: 10vh;
-    width: 100%;
-  
-}
-
-
-#form-wrapper{
-
-display: flex;
-/* justify-content: space-between; */
-align-items: center;
-text-align: left;
-padding-left: 2rem;
-padding-right: 2.5rem;
-padding-bottom: 1rem;
-background-color:rgba(117, 170, 219,0.7);
-border-radius: 50px 5px;
-
-
-}
-
-#form-wrapper h2{
-
-font-size: 2rem;
-font-weight: bold;
-text-align: center;
-margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--celeste);
+  height: 10vh;
+  width: 100%;
 
 }
 
 
-.form-control{
-  
+#form-wrapper {
+
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  text-align: left;
+  padding-left: 2rem;
+  padding-right: 2.5rem;
+  padding-bottom: 1rem;
+  background-color: rgba(117, 170, 219, 0.7);
+  border-radius: 50px 5px;
+
+
+}
+
+#form-wrapper h2 {
+
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+
+
+.form-control {
+
   /* display: flex; */
   justify-content: space-between;
   text-align: left;
   color: white;
   padding: 3px;
   font-size: 16px;
- 
+
 }
 
-.controls{
+.controls {
 
   width: 100%;
   background: white;
@@ -588,7 +506,7 @@ margin-bottom: 20px;
 
 }
 
-#date{
+#date {
   font-family: "Noto Serif", sans-serif;
   display: flex;
   text-align: center;
@@ -598,7 +516,7 @@ margin-bottom: 20px;
   padding: 4px;
 }
 
-.form-control .form-select{
+.form-control .form-select {
   font-family: "Noto Serif", sans-serif;
   display: flex;
   text-align: center;
@@ -610,7 +528,7 @@ margin-bottom: 20px;
 
 }
 
-.terms{
+.terms {
 
   padding: 4px;
   font-size: 0.8rem;
@@ -618,7 +536,8 @@ margin-bottom: 20px;
   font-family: "Noto Serif", sans-serif;
 
 }
-.btn{
+
+.btn {
   font-size: 14px;
   padding: 0.5rem;
   border-radius: 10px;
@@ -628,7 +547,8 @@ margin-bottom: 20px;
   margin: 1rem;
 
 }
-.btn:hover{
+
+.btn:hover {
   cursor: pointer;
   transition: 0.5s;
   transform: scale(1.1);
@@ -636,9 +556,9 @@ margin-bottom: 20px;
 
 }
 
-.form-help{
+.form-help {
 
-  
+
   font-size: 0.8rem;
   color: blanchedalmond;
   font-family: "Noto Serif", sans-serif;
@@ -670,11 +590,11 @@ margin-bottom: 20px;
     height: 11vh;
   } */
 
-  #banner-register{
+  #banner-register {
     height: 81.4vh;
- }
+  }
 
-  #banner{
+  #banner {
     height: 91.5vh;
   }
 
@@ -694,7 +614,7 @@ margin-bottom: 20px;
   .logo-text {
     display: none;
   }
-   
+
   .header nav {
     margin-left: 40px;
     margin-right: 40px;
@@ -708,13 +628,16 @@ margin-bottom: 20px;
   #banner {
     height: 400px;
   }
+
   #search {
     height: 200px;
   }
+
   .container {
     max-width: 720px;
-    
+
   }
+
   .card-banner {
     padding: 0px 75px;
   }
@@ -743,14 +666,15 @@ margin-bottom: 20px;
   }
 
   #logo img {
-    
+
     display: none;
   }
 
-  
+
   .header ul .lista {
     display: none;
   }
+
   .header ul .linkNav {
     font-size: 1.5vh;
     margin-left: 0px;
@@ -762,12 +686,15 @@ margin-bottom: 20px;
   #banner {
     height: 300px;
   }
+
   #search {
     height: 200px;
   }
+
   .container {
     max-width: 420px;
   }
+
   .card-banner {
     margin-top: 50px;
     padding: 0px 50px;
@@ -778,49 +705,49 @@ margin-bottom: 20px;
   }
 
 
-  #form-wrapper{
-     
+  #form-wrapper {
+
     padding-left: 1rem;
     padding-right: 1.5rem;
     padding-bottom: 0.5rem;
-    background-color:rgba(117, 170, 219,0.7);
+    background-color: rgba(117, 170, 219, 0.7);
     border-radius: 30px 2px;
-    
-    }
+
+  }
 
 
-    .controls{
-       font-size: 10px;
-    }
+  .controls {
+    font-size: 10px;
+  }
 
-    .form-control{
-  
-      padding: 2.5px;
-      font-size: 12px;
-     
-    }
+  .form-control {
+
+    padding: 2.5px;
+    font-size: 12px;
+
+  }
 
 
-    .btn{
-      font-size: 12px;
-      padding: 0.5rem;
-      border-radius: 10px;
-      font-family: "Noto Serif", sans-serif;
-      background-color: cornflowerblue;
-      color: white;
-      margin: 0.7rem;
-    
-    }
-       
-    .form-help{
-    
-      
-      font-size: 0.8rem;
-      color: blanchedalmond;
-      font-family: "Noto Serif", sans-serif;
-      
-    
-    }
+  .btn {
+    font-size: 12px;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-family: "Noto Serif", sans-serif;
+    background-color: cornflowerblue;
+    color: white;
+    margin: 0.7rem;
+
+  }
+
+  .form-help {
+
+
+    font-size: 0.8rem;
+    color: blanchedalmond;
+    font-family: "Noto Serif", sans-serif;
+
+
+  }
 
   #footer {
     flex-direction: column;

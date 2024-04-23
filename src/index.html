@@ -1,482 +1,399 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- vinculación con estilos y favicon -->
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon" />
-    <title>Campeones del Mundo</title>
-    <!-- vinculación con google-fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
 
-    <!-- vinculación fontawesome -->
-    <script
-      src="https://kit.fontawesome.com/f7fb471b65.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- vinculación con estilos y favicon -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon" />
+  <title>Campeones del Mundo</title>
+  <!-- vinculación con google-fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
 
-  <body>
-    <!-- Encabezado -->
-    <header class="header">
-      <nav>
-        <!-- Logo -->
-        <div id="logo">
-          <a href="/">
-            <!-- <i class="fa-solid fa-futbol"></i> -->
-            
-            <span class="logo-text">CAMPEONES DEL MUNDO</span>
-            <img src="./static/img/Golden-Sta.png" alt="logo Estrellas">
-          </a>
-        </div>
+  <!-- vinculación fontawesome -->
+  <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+</head>
 
-        <!-- hipervínculos del menú -->
-        <ul class="listaNav">
-          <li><a class="lista" href="#">Inicio</a></li>
-          <li><a class="lista" href="#galeria">Galería</a></li>
-          <li><a class="lista" href="#productos">Productos</a></li>
-          <li><a class="lista" href="#quienes-somos">Quienes Somos</a></li>
-          <li><a class="lista" href="./templates/contacto.html">Contacto</a></li>
-          <li>
-            <a class="linkNav Login" href="#">Login</a>
-            <!-- menu desplegable -->
-            <ul class="dropdown-content">
-              <li class="listaItem">
-                <a class="linkNav" href="./templates/iniciar-sesion.html">Iniciar sesión</a>
-              </li>
-              <li class="listaItem">
-                <a class="linkNav" href="./templates/register.html">Registrarse</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </header>
+<body>
+  <!-- Encabezado -->
+  <header class="header">
+    <nav>
+      <!-- Logo -->
+      <div id="logo">
+        <a href="/">
+          <!-- <i class="fa-solid fa-futbol"></i> -->
 
-    <!-- Contenido -->
-    <main>
-      <section id="banner" class="d-flex">
-        <div class="card-banner container">
-          <h1>ARGENTINA CAMPEÓN DEL MUNDO<br />2022</h1>
-          <a href="./templates/register.html" class="btn-Registrarse"
-            >Registrate</a
-          >
-          <h2 class="titulo_h2">
-            Registrate para comprar productos de la Selección Argentina
-          </h2>
+          <span class="logo-text">CAMPEONES DEL MUNDO</span>
+          <img src="./img/Golden-Sta.png" alt="logo Estrellas">
+        </a>
+      </div>
 
-          <!-- <video class="video_penal_montiel" src="./static/video/space_mid.mp4"></video> -->
-        </div>
-      </section>
+      <!-- hipervínculos del menú -->
+      <ul class="listaNav">
+        <li><a class="lista" href="#">Inicio</a></li>
+        <li><a class="lista" href="#galeria">Galería</a></li>
+        <li><a class="lista" href="#productos">Productos</a></li>
+        <li><a class="lista" href="#quienes-somos">Quienes Somos</a></li>
+        <li><a class="lista" href="./templates/contacto.html">Contacto</a></li>
+        <li>
+          <a class="linkNav Login" href="#">Login</a>
+          <!-- menu desplegable -->
+          <ul class="dropdown-content">
+            <li class="listaItem">
+              <a class="linkNav" href="./templates/iniciar-sesion.html">Iniciar sesión</a>
+            </li>
+            <li class="listaItem">
+              <a class="linkNav" href="./templates/register.html">Registrarse</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-      <!-- search: sección que contiene un mensaje de búsqueda
+  <!-- Contenido -->
+  <main>
+    <section id="banner" class="d-flex">
+      <div class="card-banner container">
+        <h1>ARGENTINA CAMPEÓN DEL MUNDO<br />2022</h1>
+        <a href="./templates/register.html" class="btn-Registrarse">Registrate</a>
+        <h2 class="titulo_h2">
+          Registrate para comprar productos de la Selección Argentina
+        </h2>
+
+        <!-- <video class="video_penal_montiel" src="./video/space_mid.mp4"></video> -->
+      </div>
+    </section>
+
+    <!-- search: sección que contiene un mensaje de búsqueda
             y un campo de entrada de texto para que los usuarios
             ingresen lo que desean buscar en un sitio web
               -->
-      <!-- <section id="search" class="container">
+    <!-- <section id="search" class="container">
           <h2 class="search-title">¿Qué estas buscando para ver?</h2>
           <input type="text" class="input-search" placeholder="Buscar..." />
         </section> -->
 
-      <!-- popular: mostrar imágenes de las peliculas
+    <!-- popular: mostrar imágenes de las peliculas
             con tendencia hoy -->
-      <section id="galeria">
-        <!-- División contenedora del titulo
+    <section id="galeria">
+      <!-- División contenedora del titulo
                 e imagenes -->
-        <div class="container" class="movies-grid">
-          <h2>Galería</h2>
-          <!-- Div para mostrar todas las imagenes e info 
+      <div class="container" class="movies-grid">
+        <h2>Galería</h2>
+        <!-- Div para mostrar todas las imagenes e info 
                     de las películas -->
-          <div id="list-popular">
-            <!-- División que mostrará imagen y detalle de la pelicula, mismo 
+        <div id="list-popular">
+          <!-- División que mostrará imagen y detalle de la pelicula, mismo 
                     formato para todas las peliculas -->
-            <!-- pelicula 01 -->
-            <div class="movie-item">
-              <a href="./templates/detail-movie.html">
-                <img
-                  src="./static/img/foto_1.jpg"
-                  alt=""
-                  class="movie-item-img"
-                  width="480"
-                  height="380"
-                />
+          <!-- pelicula 01 -->
+          <div class="movie-item">
+            <a href="./templates/detail-movie.html">
+              <img src="./img/foto_1.jpg" alt="" class="movie-item-img" width="480" height="380" />
 
-                <div class="movie-item-detail">
-                  <p class="movie-item-detail-title">
-                    El color del público argentino que se distinguió a lo largo
-                    del torneo
-                  </p>
-                  <!-- <p class="movie-item-detail-subtitle">2023 - 7.8</p> -->
-                </div>
-              </a>
-            </div>
+              <div class="movie-item-detail">
+                <p class="movie-item-detail-title">
+                  El color del público argentino que se distinguió a lo largo
+                  del torneo
+                </p>
+                <!-- <p class="movie-item-detail-subtitle">2023 - 7.8</p> -->
+              </div>
+            </a>
+          </div>
 
-            <!-- pelicula 02 -->
-            <div class="movie-item">
-              <a href="./templates/detail-movie.html">
-                <img
-                  src="./static/img/foto_2.jpg"
-                  alt=""
-                  class="movie-item-img"
-                />
+          <!-- pelicula 02 -->
+          <div class="movie-item">
+            <a href="./templates/detail-movie.html">
+              <img src="./img/foto_2.jpg" alt="" class="movie-item-img" />
 
-                <div class="movie-item-detail">
-                  <p class="movie-item-detail-title">
-                    La frase que inmortalizó Lionel Messi en el Mundial
-                  </p>
-                  <!-- <p class="movie-item-detail-subtitle">2023 - 7.8</p> -->
-                </div>
-              </a>
-            </div>
+              <div class="movie-item-detail">
+                <p class="movie-item-detail-title">
+                  La frase que inmortalizó Lionel Messi en el Mundial
+                </p>
+                <!-- <p class="movie-item-detail-subtitle">2023 - 7.8</p> -->
+              </div>
+            </a>
+          </div>
 
-            <!-- pelicula 03 -->
-            <div class="movie-item">
-              <a href="./templates/detail-movie.html">
-                <img
-                  src="./static/img/foto_3.jpg"
-                  alt=""
-                  class="movie-item-img"
-                />
+          <!-- pelicula 03 -->
+          <div class="movie-item">
+            <a href="./templates/detail-movie.html">
+              <img src="./img/foto_3.jpg" alt="" class="movie-item-img" />
 
-                <div class="movie-item-detail">
-                  <p class="movie-item-detail-title">
-                    La habitual ceremonia previa a cada encuentro con fuegos
-                    artificiales y un juego de luces
-                  </p>
-                  <!-- <p class="movie-item-detail-subtitle">2023 - 7.8</p> -->
-                </div>
-              </a>
-            </div>
+              <div class="movie-item-detail">
+                <p class="movie-item-detail-title">
+                  La habitual ceremonia previa a cada encuentro con fuegos
+                  artificiales y un juego de luces
+                </p>
+                <!-- <p class="movie-item-detail-subtitle">2023 - 7.8</p> -->
+              </div>
+            </a>
+          </div>
 
-            <!-- pelicula 04 -->
-            <div class="movie-item">
-              <a href="./templates/detail-movie.html">
-                <img
-                  src="./static/img/foto_4.jpg"
-                  alt=""
-                  class="movie-item-img"
-                />
+          <!-- pelicula 04 -->
+          <div class="movie-item">
+            <a href="./templates/detail-movie.html">
+              <img src="./img/foto_4.jpg" alt="" class="movie-item-img" />
 
-                <div class="movie-item-detail">
-                  <p class="movie-item-detail-title">
-                    Las formaciones en el momento de los himnos y en la previa
-                    al gran duelo
-                  </p>
-                  <!-- <p class="movie-item-detail-subtitle">2023 - 7.8</p> -->
-                </div>
-              </a>
-            </div>
+              <div class="movie-item-detail">
+                <p class="movie-item-detail-title">
+                  Las formaciones en el momento de los himnos y en la previa
+                  al gran duelo
+                </p>
+                <!-- <p class="movie-item-detail-subtitle">2023 - 7.8</p> -->
+              </div>
+            </a>
+          </div>
 
-            <!-- pelicula 05 -->
-            <div class="movie-item">
-              <a href="./templates/detail-movie.html">
-                <img
-                  src="./static/img/foto_5.jpg"
-                  alt=""
-                  class="movie-item-img"
-                />
+          <!-- pelicula 05 -->
+          <div class="movie-item">
+            <a href="./templates/detail-movie.html">
+              <img src="./img/foto_5.jpg" alt="" class="movie-item-img" />
 
-                <div class="movie-item-detail">
-                  <p class="movie-item-detail-title">
-                    Ángel Di María avanza a pura velocidad ante Jules Kounde
-                  </p>
-                  <!-- <p class="movie-item-detail-subtitle">2023 - 7.8</p> -->
-                </div>
-              </a>
-            </div>
+              <div class="movie-item-detail">
+                <p class="movie-item-detail-title">
+                  Ángel Di María avanza a pura velocidad ante Jules Kounde
+                </p>
+                <!-- <p class="movie-item-detail-subtitle">2023 - 7.8</p> -->
+              </div>
+            </a>
+          </div>
 
-            <!-- pelicula 06 -->
-            <div class="movie-item">
-              <a href="./templates/detail-movie.html">
-                <img
-                  src="./static/img/foto_6.jpg"
-                  alt=""
-                  class="movie-item-img"
-                />
+          <!-- pelicula 06 -->
+          <div class="movie-item">
+            <a href="./templates/detail-movie.html">
+              <img src="./img/foto_6.jpg" alt="" class="movie-item-img" />
 
-                <div class="movie-item-detail">
-                  <p class="movie-item-detail-title">
-                    Alexis Mac Allister disputa la pelota con Antoine Griezmann
-                  </p>
-                  <!-- <p class="movie-item-detail-subtitle">2023 - 7.8</p> -->
-                </div>
-              </a>
-            </div>
+              <div class="movie-item-detail">
+                <p class="movie-item-detail-title">
+                  Alexis Mac Allister disputa la pelota con Antoine Griezmann
+                </p>
+                <!-- <p class="movie-item-detail-subtitle">2023 - 7.8</p> -->
+              </div>
+            </a>
+          </div>
 
-            <!-- pelicula 07 -->
-            <div class="movie-item">
-              <a href="./templates/detail-movie.html">
-                <img
-                  src="./static/img/foto_7.jpg"
-                  alt=""
-                  class="movie-item-img"
-                />
+          <!-- pelicula 07 -->
+          <div class="movie-item">
+            <a href="./templates/detail-movie.html">
+              <img src="./img/foto_7.jpg" alt="" class="movie-item-img" />
 
-                <div class="movie-item-detail">
-                  <p class="movie-item-detail-title">
-                    Lionel Messi encara ante Theo Hernandez
-                  </p>
-                  <!-- <p class="movie-item-detail-subtitle">2023 - 7.8</p> -->
-                </div>
-              </a>
-            </div>
+              <div class="movie-item-detail">
+                <p class="movie-item-detail-title">
+                  Lionel Messi encara ante Theo Hernandez
+                </p>
+                <!-- <p class="movie-item-detail-subtitle">2023 - 7.8</p> -->
+              </div>
+            </a>
+          </div>
 
-            <!-- pelicula 08 -->
-            <div class="movie-item">
-              <a href="./templates/detail-movie.html">
-                <img
-                  src="./static/img/foto_8.jpg"
-                  alt=""
-                  class="movie-item-img"
-                />
+          <!-- pelicula 08 -->
+          <div class="movie-item">
+            <a href="./templates/detail-movie.html">
+              <img src="./img/foto_8.jpg" alt="" class="movie-item-img" />
 
-                <div class="movie-item-detail">
-                  <p class="movie-item-detail-title">
-                    Ángel Di María remata con su zurda prodigiosa
-                  </p>
-                  <!-- <p class="movie-item-detail-subtitle">2023 - 7.8</p> -->
-                </div>
-              </a>
-            </div>
+              <div class="movie-item-detail">
+                <p class="movie-item-detail-title">
+                  Ángel Di María remata con su zurda prodigiosa
+                </p>
+                <!-- <p class="movie-item-detail-subtitle">2023 - 7.8</p> -->
+              </div>
+            </a>
+          </div>
 
-            <!-- pelicula 09 -->
-            <div class="movie-item">
-              <a href="./templates/detail-movie.html">
-                <img
-                  src="./static/img/foto_9.jpg"
-                  alt=""
-                  class="movie-item-img"
-                />
+          <!-- pelicula 09 -->
+          <div class="movie-item">
+            <a href="./templates/detail-movie.html">
+              <img src="./img/foto_9.jpg" alt="" class="movie-item-img" />
 
-                <div class="movie-item-detail">
-                  <p class="movie-item-detail-title">
-                    Hugo Lloris llega antes que Cristian Romero y despeja ante
-                    el intento argentino
-                  </p>
-                  <!-- <p class="movie-item-detail-subtitle">2023 - 7.8</p> -->
-                </div>
-              </a>
-            </div>
+              <div class="movie-item-detail">
+                <p class="movie-item-detail-title">
+                  Hugo Lloris llega antes que Cristian Romero y despeja ante
+                  el intento argentino
+                </p>
+                <!-- <p class="movie-item-detail-subtitle">2023 - 7.8</p> -->
+              </div>
+            </a>
+          </div>
 
-            <!-- pelicula 10 -->
-            <div class="movie-item">
-              <a href="./templates/detail-movie.html">
-                <img
-                  src="./static/img/foto_10.jpg"
-                  alt=""
-                  class="movie-item-img"
-                />
+          <!-- pelicula 10 -->
+          <div class="movie-item">
+            <a href="./templates/detail-movie.html">
+              <img src="./img/foto_10.jpg" alt="" class="movie-item-img" />
 
-                <div class="movie-item-detail">
-                  <p class="movie-item-detail-title">
-                    Batalla aérea entre Alexis Mac Allister y Olivier Giroud
-                  </p>
-                  <!-- <p class="movie-item-detail-subtitle">2023 - 7.8</p> -->
-                </div>
-              </a>
-            </div>
+              <div class="movie-item-detail">
+                <p class="movie-item-detail-title">
+                  Batalla aérea entre Alexis Mac Allister y Olivier Giroud
+                </p>
+                <!-- <p class="movie-item-detail-subtitle">2023 - 7.8</p> -->
+              </div>
+            </a>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- top-rated: mostrar las películas más aclamadas-->
-      <section id="productos">
-        <!-- División contenedora del titulo
+    <!-- top-rated: mostrar las películas más aclamadas-->
+    <section id="productos">
+      <!-- División contenedora del titulo
                 e imagenes -->
-        <div class="container">
-          <h2>Nuestros productos</h2>
-          <!-- Div para mostrar todas las imagenes e info 
+      <div class="container">
+        <h2>Nuestros productos</h2>
+        <!-- Div para mostrar todas las imagenes e info 
                         de las películas -->
-          <div id="list-top-rated" class="movies-scroller">
-            <!-- Info de las películas mismo formato para todas -->
-            <!-- Producto 01 -->
-            <div class="movie-item-v2">
-              <div class="wrapper">
-                <img
-                  src="./static/img/Camiseta Adidas Titular.jpg"
-                  alt=""
-                  class="movie-item-img-v2"
-                />
-              </div>
-              <div class="movie-item-detail-v2">
-                <p class="movie-item-detail-title-v2">
-                  CAMISETA ADIDAS TITULAR AUTENTICA SELECCIÓN
-                </p>
-                <p class="movie-item-detail-subtitle-v2">$ 124.999,00</p>
-              </div>
+        <div id="list-top-rated" class="movies-scroller">
+          <!-- Info de las películas mismo formato para todas -->
+          <!-- Producto 01 -->
+          <div class="movie-item-v2">
+            <div class="wrapper">
+              <img src="./img/Camiseta Adidas Titular.jpg" alt="" class="movie-item-img-v2" />
             </div>
-
-            <!-- Producto 02 -->
-            <div class="movie-item-v2">
-              <div class="wrapper">
-                <img
-                  src="./static/img/Buzo arquero.jpg"
-                  alt=""
-                  class="movie-item-img-v2"
-                />
-              </div>
-              <div class="movie-item-detail-v2">
-                <p class="movie-item-detail-title-v2">
-                  BUZO ARQUERO ADIDAS ICON SELECCIÓN ARGENTINA
-                </p>
-                <p class="movie-item-detail-subtitle-v2">$ 52.499,00</p>
-              </div>
+            <div class="movie-item-detail-v2">
+              <p class="movie-item-detail-title-v2">
+                CAMISETA ADIDAS TITULAR AUTENTICA SELECCIÓN
+              </p>
+              <p class="movie-item-detail-subtitle-v2">$ 124.999,00</p>
             </div>
+          </div>
 
-            <!-- Producto 03 -->
-            <div class="movie-item-v2">
-              <div class="wrapper">
-                <img
-                  src="./static/img/Short Infantil.jpg"
-                  alt=""
-                  class="movie-item-img-v2"
-                />
-              </div>
-              <div class="movie-item-detail-v2">
-                <p class="movie-item-detail-title-v2">
-                  SHORT INFANTIL ADIDAS ALTERNATIVO SELECCÓN
-                </p>
-                <p class="movie-item-detail-subtitle-v2">$ 27.999,00</p>
-              </div>
+          <!-- Producto 02 -->
+          <div class="movie-item-v2">
+            <div class="wrapper">
+              <img src="./img/Buzo arquero.jpg" alt="" class="movie-item-img-v2" />
             </div>
-
-            <!-- Producto 04 -->
-            <div class="movie-item-v2">
-              <div class="wrapper">
-                <img
-                  src="./static/img/Buzo adidas.jpg"
-                  alt=""
-                  class="movie-item-img-v2"
-                />
-              </div>
-              <div class="movie-item-detail-v2">
-                <p class="movie-item-detail-title-v2">
-                  BUZO ADIDAS TIRO 23 PRO SELECCIÓN ARGENTINA PULSE
-                </p>
-                <p class="movie-item-detail-subtitle-v2">$ 69.999,00</p>
-              </div>
+            <div class="movie-item-detail-v2">
+              <p class="movie-item-detail-title-v2">
+                BUZO ARQUERO ADIDAS ICON SELECCIÓN ARGENTINA
+              </p>
+              <p class="movie-item-detail-subtitle-v2">$ 52.499,00</p>
             </div>
+          </div>
 
-            <!-- Producto 05 -->
-            <div class="movie-item-v2">
-              <div class="wrapper">
-                <img
-                  src="./static/img/Mate Negro.jpg"
-                  alt=""
-                  class="movie-item-img-v2"
-                />
-              </div>
-              <div class="movie-item-detail-v2">
-                <p class="movie-item-detail-title-v2">
-                  MATE NEGRO ARO DORADO 3 ESTRELLAS SELECCÓN
-                </p>
-                <p class="movie-item-detail-subtitle-v2">$ 27.200,00</p>
-              </div>
+          <!-- Producto 03 -->
+          <div class="movie-item-v2">
+            <div class="wrapper">
+              <img src="./img/Short Infantil.jpg" alt="" class="movie-item-img-v2" />
             </div>
-
-            <!-- Producto 06 -->
-            <div class="movie-item-v2">
-              <div class="wrapper">
-                <img
-                  src="./static/img/Taza Messi.jpg"
-                  alt=""
-                  class="movie-item-img-v2"
-                />
-              </div>
-              <div class="movie-item-detail-v2">
-                <p class="movie-item-detail-title-v2">
-                  TAZA "MESSI DIBU DI MARIA" SELECCIÓN ARGENTINA
-                </p>
-                <p class="movie-item-detail-subtitle-v2">$ 6.800,00</p>
-              </div>
+            <div class="movie-item-detail-v2">
+              <p class="movie-item-detail-title-v2">
+                SHORT INFANTIL ADIDAS ALTERNATIVO SELECCÓN
+              </p>
+              <p class="movie-item-detail-subtitle-v2">$ 27.999,00</p>
             </div>
+          </div>
 
-            <!-- Producto 07 -->
-            <div class="movie-item-v2">
-              <div class="wrapper">
-                <img
-                  src="./static/img/Tabla grande.jpg"
-                  alt=""
-                  class="movie-item-img-v2"
-                />
-              </div>
-              <div class="movie-item-detail-v2">
-                <p class="movie-item-detail-title-v2">
-                  TABLA GRANDE COLOR 30 MM. SELECCIÓN ARGENTINA
-                </p>
-                <p class="movie-item-detail-subtitle-v2">$ 56.000,00</p>
-              </div>
+          <!-- Producto 04 -->
+          <div class="movie-item-v2">
+            <div class="wrapper">
+              <img src="./img/Buzo adidas.jpg" alt="" class="movie-item-img-v2" />
             </div>
-
-            <!-- Producto 08 -->
-            <div class="movie-item-v2">
-              <div class="wrapper">
-                <img
-                  src="./static/img/Figura coleccionable.jpg"
-                  alt=""
-                  class="movie-item-img-v2"
-                />
-              </div>
-              <div class="movie-item-detail-v2">
-                <p class="movie-item-detail-title-v2">
-                  FIGURA COLECCIONABLE LAUTARO SELECCIÓN
-                </p>
-                <p class="movie-item-detail-subtitle-v2">$ 56.000,00</p>
-              </div>
+            <div class="movie-item-detail-v2">
+              <p class="movie-item-detail-title-v2">
+                BUZO ADIDAS TIRO 23 PRO SELECCIÓN ARGENTINA PULSE
+              </p>
+              <p class="movie-item-detail-subtitle-v2">$ 69.999,00</p>
             </div>
+          </div>
 
-            <!-- Producto 09 -->
-            <div class="movie-item-v2">
-              <div class="wrapper">
-                <img
-                  src="./static/img/Llavero.jpg"
-                  alt=""
-                  class="movie-item-img-v2"
-                />
-              </div>
-              <div class="movie-item-detail-v2">
-                <p class="movie-item-detail-title-v2">
-                  LLAVERO CALADO SELECCIÓN ARGENTINA
-                </p>
-                <p class="movie-item-detail-subtitle-v2">$ 960,00</p>
-              </div>
+          <!-- Producto 05 -->
+          <div class="movie-item-v2">
+            <div class="wrapper">
+              <img src="./img/Mate Negro.jpg" alt="" class="movie-item-img-v2" />
+            </div>
+            <div class="movie-item-detail-v2">
+              <p class="movie-item-detail-title-v2">
+                MATE NEGRO ARO DORADO 3 ESTRELLAS SELECCÓN
+              </p>
+              <p class="movie-item-detail-subtitle-v2">$ 27.200,00</p>
+            </div>
+          </div>
+
+          <!-- Producto 06 -->
+          <div class="movie-item-v2">
+            <div class="wrapper">
+              <img src="./img/Taza Messi.jpg" alt="" class="movie-item-img-v2" />
+            </div>
+            <div class="movie-item-detail-v2">
+              <p class="movie-item-detail-title-v2">
+                TAZA "MESSI DIBU DI MARIA" SELECCIÓN ARGENTINA
+              </p>
+              <p class="movie-item-detail-subtitle-v2">$ 6.800,00</p>
+            </div>
+          </div>
+
+          <!-- Producto 07 -->
+          <div class="movie-item-v2">
+            <div class="wrapper">
+              <img src="./img/Tabla grande.jpg" alt="" class="movie-item-img-v2" />
+            </div>
+            <div class="movie-item-detail-v2">
+              <p class="movie-item-detail-title-v2">
+                TABLA GRANDE COLOR 30 MM. SELECCIÓN ARGENTINA
+              </p>
+              <p class="movie-item-detail-subtitle-v2">$ 56.000,00</p>
+            </div>
+          </div>
+
+          <!-- Producto 08 -->
+          <div class="movie-item-v2">
+            <div class="wrapper">
+              <img src="./img/Figura coleccionable.jpg" alt="" class="movie-item-img-v2" />
+            </div>
+            <div class="movie-item-detail-v2">
+              <p class="movie-item-detail-title-v2">
+                FIGURA COLECCIONABLE LAUTARO SELECCIÓN
+              </p>
+              <p class="movie-item-detail-subtitle-v2">$ 56.000,00</p>
+            </div>
+          </div>
+
+          <!-- Producto 09 -->
+          <div class="movie-item-v2">
+            <div class="wrapper">
+              <img src="./img/Llavero.jpg" alt="" class="movie-item-img-v2" />
+            </div>
+            <div class="movie-item-detail-v2">
+              <p class="movie-item-detail-title-v2">
+                LLAVERO CALADO SELECCIÓN ARGENTINA
+              </p>
+              <p class="movie-item-detail-subtitle-v2">$ 960,00</p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="quienes-somos">
-        <div class="container">
-          <div class="titulo">
-            <h2>Quiénes somos</h2>
-          </div>
-          <p>
-            Somos Campeones del Mundo!. <br />
-            Somos una empresa familiar, fundada en 2002, con sucursales en Mar
-            del Plata y CABA, dedicada principalmente a la venta de productos de
-            la selección Argentinaa. <br />
-            <br />
-            Además, somos Tienda Online Oficial de la Selección Argentina. Aquí
-            encontraras todos los productos de AFA desde la indumentaria oficial
-            adidas como también toda la línea de los productos Oficiales AFA.
-            Vendemos solo online, entregamos en todo el país y tenemos todos los
-            medios de Pago disponibles.
-          </p>
-          <div class="fondotexto"></div>
+    <section id="quienes-somos">
+      <div class="container">
+        <div class="titulo">
+          <h2>Quiénes somos</h2>
         </div>
-      </section>
-    </main>
+        <p>
+          Somos Campeones del Mundo!. <br />
+          Somos una empresa familiar, fundada en 2002, con sucursales en Mar
+          del Plata y CABA, dedicada principalmente a la venta de productos de
+          la selección Argentinaa. <br />
+          <br />
+          Además, somos Tienda Online Oficial de la Selección Argentina. Aquí
+          encontraras todos los productos de AFA desde la indumentaria oficial
+          adidas como también toda la línea de los productos Oficiales AFA.
+          Vendemos solo online, entregamos en todo el país y tenemos todos los
+          medios de Pago disponibles.
+        </p>
+        <div class="fondotexto"></div>
+      </div>
+    </section>
+  </main>
 
-    <footer id="footer">
-      <a href="">Términos y condiciones</a>
-      <a href="">Preguntas Frecuentes</a>
-      <a href="">Ayuda</a>
-    </footer>
-  </body>
+  <footer id="footer">
+    <a href="">Términos y condiciones</a>
+    <a href="">Preguntas Frecuentes</a>
+    <a href="">Ayuda</a>
+  </footer>
+</body>
+
 </html>
