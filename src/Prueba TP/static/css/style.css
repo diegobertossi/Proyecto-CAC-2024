@@ -34,6 +34,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: content-box;
 }
 @keyframes shaking {
   0% {
@@ -655,17 +656,34 @@ margin-bottom: 20px;
 }
 
 
-@media screen and (min-width: 1024) and (max-width: 2800px) {
 
-  
-  .logo-text {
-    display: none;
+
+
+/* Extra large devices (1200px and up) */
+@media only screen and (min-width: 1367px) {
+
+  /* .header nav{
+    height: 11vh;
+  } */
+
+  /* #header-register {
+    height: 11vh;
+  } */
+
+  #banner-register{
+    height: 81.4vh;
+ }
+
+  #banner{
+    height: 91.5vh;
   }
-   
-
 
 }
 
+
+/* @media screen and (min-width: 1024px) and (max-width: 1366px) {
+
+} */
 
 /* TABLETS */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
