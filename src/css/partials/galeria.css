@@ -1,0 +1,70 @@
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    row-gap: 20px;
+}
+
+.movie-item {
+
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 450ms;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+
+.movie-item-img {
+    width: 200px;
+    height: 300px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+/* Efecto que ocurre al pasar el cursor sube una ventana en 
+cada imagen de cada película y muestra los detalles */
+
+.movie-item:hover {
+    opacity: 0.7;
+}
+
+.movie-item:hover .movie-item-detail {
+    bottom: 0;
+}
+
+/* Agrega una estrella al lado del subtitulo */
+.movie-item-detail-subtitle::after {
+    content: "🌟";
+}
+
+
+.movie-item-detail {
+    bottom: -100%;
+    padding: 30px;
+    max-height: 100%;
+    overflow-y: auto;
+    line-height: 15px;
+    position: absolute;
+    background-color: var(--celesteMasClaro);
+    box-sizing: border-box;
+    transition: bottom 0.4s ease-in-out;
+    width: 100%;
+}
+
+.movie-item-detail-title {
+    color: white;
+    margin: 5px 0px 0px 0px;
+}
+
+.movie-item-detail-subtitle {
+    color: white;
+    font-size: 8px;
+    margin: 3px 0px;
+}

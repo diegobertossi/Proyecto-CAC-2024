@@ -1,0 +1,24 @@
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--celeste);
+    height: 10vh;
+    width: 100%;
+
+}
+#footer a {
+    color: var(--azulClaro);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 30px;
+    text-decoration: none;
+
+}
+
+#footer a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+

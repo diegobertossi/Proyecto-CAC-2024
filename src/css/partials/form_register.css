@@ -1,0 +1,118 @@
+#form-wrapper {
+
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    text-align: left;
+    padding-left: 2rem;
+    padding-right: 2.5rem;
+    padding-bottom: 1rem;
+    background-color: rgba(117, 170, 219, 0.7);
+    border-radius: 50px 5px;
+
+
+}
+
+#form-wrapper h2 {
+
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+
+.form-control {
+
+    /* display: flex; */
+    justify-content: space-between;
+    text-align: left;
+    color: white;
+    padding: 3px;
+    font-size: 16px;
+
+}
+
+.controls {
+
+    width: 100%;
+    background: white;
+    color: #000;
+    padding: 4px;
+    border-radius: 10px;
+    border: 1px solid var(--azulClaro);
+    font-family: "Noto Serif", sans-serif;
+    font-size: 14px;
+    color: black;
+
+}
+
+#date {
+    font-family: "Noto Serif", sans-serif;
+    display: flex;
+    text-align: center;
+    font-size: 14px;
+    width: 146px;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+.form-control .form-select {
+    font-family: "Noto Serif", sans-serif;
+    display: flex;
+    text-align: center;
+    font-size: 14px;
+    width: 160px;
+    border-radius: 10px;
+    padding: 4px;
+    /* margin-left: 30px; */
+
+}
+
+.terms {
+
+    padding: 4px;
+    font-size: 0.8rem;
+    color: blanchedalmond;
+    font-family: "Noto Serif", sans-serif;
+
+}
+
+.btn {
+    font-size: 14px;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-family: "Noto Serif", sans-serif;
+    background-color: cornflowerblue;
+    color: white;
+    margin: 1rem;
+
+}
+
+.btn:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.1);
+
+
+}
+
+.form-help {
+
+
+    font-size: 0.8rem;
+    color: blanchedalmond;
+    font-family: "Noto Serif", sans-serif;
+
+}
+
+/* --------------------- PARA EVALUAR CATEGORIA */
+.d-form {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.d-iframe {
+    width: 100%;
+}

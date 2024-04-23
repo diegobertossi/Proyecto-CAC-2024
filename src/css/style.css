@@ -1,5 +1,5 @@
-@import url("./base.css");
-@import url("./header.css");
+@import url("./partials/base.css");
+@import url("./partials/header.css");
 @import url("./test.css");
 
 
@@ -17,27 +17,10 @@ a {
 }
 
 
-#logo a {
-
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  text-decoration: none;
-  color: var(--azulClaro);
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin-left: 2rem;
 
 
-}
 
 
-/* Al pasar el cursor sobre el elemento #logo, se activa una
-animación que produce un efecto visual de sacudida y giro
-repetitivo, mejorando la interacción visual cuando se interactúa con ese elemento. */
-#logo:hover {
-  animation: heartbeat 2s infinite;
-}
 
 /*  */
 h2 {
@@ -48,80 +31,17 @@ h2 {
 
 
 
-.movie-item-img {
-  width: 200px;
-  height: 300px;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
-#banner {
-
-  margin-top: 5rem;
-  background-image: url("../img/argentina-world.jpg");
-  background-size: cover;
-  background-position: top;
-  height: 90vh;
-  box-shadow: inset 0 0 0 2000px rgba(84, 84, 84, 0.5);
-
-  color: white;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 
 
-}
-
-#banner-register {
-
-  margin-top: 5rem;
-  background-image: url("../img/argentina-world.jpg");
-  background-size: cover;
-  background-position: top;
-  height: 77vh;
-  box-shadow: inset 0 0 0 2000px rgba(84, 84, 84, 0.5);
-
-  /* color: white; */
-
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* text-align: center; */
 
 
-}
 
-.header {
 
-  background: var(--GradienteBlancoCeleste);
-  color: #ffffff;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 9999;
 
-}
 
-#header nav {
 
-  display: flex;
-  align-items: center;
-  text-align: center;
-  height: 10vh;
 
-}
 
-.btn-Registrarse {
-  background-color: var(--primary-color);
-  padding: 10px;
-  border-radius: 10px;
-  color: #fff;
-}
 
 .container {
   max-width: 1200px;
@@ -134,218 +54,44 @@ h2 {
   padding: 0px 160px;
 }
 
-.header ul li .dropdown-content {
-  position: absolute;
-  z-index: 2;
 
-  top: 3.2rem;
-  right: 0.1rem;
-  transition: all 0.5s;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
-  /* display: block; con eso hace lo mismo */
-  opacity: 0;
-  background: var(--GradienteCelesteBlanco);
-}
 
-.header ul {
-  position: relative;
-  padding-left: 2rem;
-}
 
-/* Mostrar el menú desplegable al hacer hover sobre el enlace */
-.header ul li:hover .dropdown-content {
-  opacity: 1;
-}
 
-.header ul li .dropdown-content li {
-  text-decoration: none;
-  list-style: none;
-}
 
-.listaNav a {
-  text-decoration: none;
-  color: var(--azulClaro);
-  font-weight: bold;
-  font-size: 0.9rem;
-}
 
-.linkNav {
-  padding: 0.5rem;
-}
 
-.listaNav {
-  list-style: none;
-  display: flex;
-  align-items: center;
 
-  .listaItem {
-    padding: 0.5rem;
-    margin-right: 2rem;
-  }
-}
 
-.linkNav .Login {
-  background-color: var(--celeste);
-  color: white;
-  border-radius: 5px;
-  padding: 0.5rem;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
 
-.listaNav a:hover {
-  color: var(--azulClaro);
-  transform: scale(0.95);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-  border-radius: 5px;
-  padding: 0.5rem;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
 
-.input-search {
-  background-color: var(--bg-input-color);
-  border: 2px solid white;
-  border-radius: 25px;
-  color: white;
-  font-size: 16px;
-  height: 50px;
-  margin: 20px 0px;
-  outline: none;
-  padding: 0px 20px;
-  width: 70%;
-  font-family: "Nunito", sans-serif;
-}
 
-.movie-item-detail {
-  bottom: -100%;
-  padding: 30px;
-  max-height: 100%;
-  overflow-y: auto;
-  line-height: 15px;
-  position: absolute;
-  background-color: var(--celesteMasClaro);
-  box-sizing: border-box;
-  transition: bottom 0.4s ease-in-out;
-  width: 100%;
-}
 
-.movie-item-detail-title {
-  color: white;
-  margin: 5px 0px 0px 0px;
-}
 
-.movie-item-detail-subtitle {
-  color: white;
-  font-size: 8px;
-  margin: 3px 0px;
-}
 
-#productos {
-  margin: 50px 0px;
-}
+
+
+
+
+
 
 /* 
 <!-- Info de las películas mismo formato para todas --> */
-.movie-item-v2 {
-  border-radius: 20px;
-  width: 170px;
-  min-width: 170px;
-  font-size: 20px;
-  cursor: pointer;
-  margin-left: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  transition: 450ms all;
-  -webkit-transform-origin: center left;
-  transform-origin: center left;
-}
 
 
-.movie-item-v2:hover {
-  transform: scale(1.1);
-}
 
 
-.wrapper {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  width: 100%;
-  min-height: calc(150px * 1.5);
-  height: calc(150px * 1.5);
-  overflow: hidden;
-}
-
-.movie-item-img-v2 {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
-/* .movie-item-detail-v2 {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
-
-.movie-item-detail-title-v2 {
-  color: black;
-  font-size: 14px;
-}
-
-.movie-item-detail-subtitle-v2 {
-
-  color: black;
-  font-weight: bold;
-  padding: 10px 20px;
-
-}
-
-/* CSS 4 - Selectores avanzados y Animaciones. Selectores avanzados. 
-Animaciones con CSS. Incorporación de transformaciones y transiciones
-a elementos. Introducción Responsive Web Design.  --------------------------------*/
 
 
-.btn-Registrarse {
-  background-color: var(--azulClaro);
-  color: #ffffff;
-  padding: 0.5rem 1rem;
-  margin-top: 5rem;
-  border-radius: 5px;
-  font-size: 1.2rem;
-  font-weight: bolder;
-  text-decoration: none;
-  /* Agregar efecto de botón presionado */
-  transition: transform 0.3s, box-shadow 0.3s;
-}
 
-.btn-Registrarse:hover {
-  background-color: var(--celeste);
-  transform: scale(0.95);
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-}
 
-.card-banner h1 {
-  color: #fff;
-  font-size: 4vw;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-  /* margin-bottom: 3rem; */
-}
 
-.card-banner h2 {
 
-  font-size: 1.5vw;
-  font-weight: normal;
-  margin-top: 1rem;
 
-}
+
+
 
 #galeria,
 #productos {
@@ -363,217 +109,28 @@ a elementos. Introducción Responsive Web Design.  -----------------------------
   text-align: center;
 }
 
-.movie-item {
-
-  border-radius: 50px;
-  overflow: hidden;
-  position: relative;
-  display: inline-block;
-  width: 200px;
-  height: 300px;
-  font-size: 20px;
-  cursor: pointer;
-  transition: all 450ms;
-  -webkit-transform-origin: center left;
-  transform-origin: center left;
-}
 
 
 
-/* Efecto que ocurre al pasar el cursor sube una ventana en 
-cada imagen de cada película y muestra los detalles */
-.movie-item:hover {
-  opacity: 0.7;
-}
 
-.movie-item:hover .movie-item-detail {
-  bottom: 0;
-}
+
 
 */
 
-/* Agrega una estrella al lado del subtitulo */
-.movie-item-detail-subtitle::after {
-  content: "🌟";
-}
-
-#quienes-somos p {
-  margin: 1rem 5%;
-}
-
-.titulo {
-  background-color: rgb(225 225 225);
-
-  color: var(--azulClaro);
-
-  border-color: #002e55;
-
-  border-radius: 20px 20px 0px 0px;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
-  line-height: 2rem;
-  /* padding: 1rem 1rem 5rem 5 rem; */
-}
-
-.fondotexto {
-  height: 25px;
-  background-color: #c1c2c8;
-  border-radius: 0px 0px 20px 20px;
-  margin-bottom: 50px;
-}
-
-#footer a {
-  color: var(--azulClaro);
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: bold;
-  padding-left: 30px;
-  text-decoration: none;
-
-}
-
-#footer a:hover {
-  text-decoration: underline;
-  color: blue;
-}
-
-/* Estilos a los nombres de las películas que 
-están en la sección  */
-.movie-item-detail-title-v2:hover {
-  color: var(--primary-color);
-}
-
-/* CSS 5. Flexbox. Media Queries. ¿Qué es Flexbox?
-Propiedades para el contenedor Flex, y los Flex items ---------------------*/
-#footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--celeste);
-  height: 10vh;
-  width: 100%;
-
-}
-
-
-#form-wrapper {
-
-  display: flex;
-  /* justify-content: space-between; */
-  align-items: center;
-  text-align: left;
-  padding-left: 2rem;
-  padding-right: 2.5rem;
-  padding-bottom: 1rem;
-  background-color: rgba(117, 170, 219, 0.7);
-  border-radius: 50px 5px;
-
-
-}
-
-#form-wrapper h2 {
-
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 20px;
-
-}
-
-
-.form-control {
-
-  /* display: flex; */
-  justify-content: space-between;
-  text-align: left;
-  color: white;
-  padding: 3px;
-  font-size: 16px;
-
-}
-
-.controls {
-
-  width: 100%;
-  background: white;
-  color: #000;
-  padding: 4px;
-  border-radius: 10px;
-  border: 1px solid var(--azulClaro);
-  font-family: "Noto Serif", sans-serif;
-  font-size: 14px;
-  color: black;
-
-}
-
-#date {
-  font-family: "Noto Serif", sans-serif;
-  display: flex;
-  text-align: center;
-  font-size: 14px;
-  width: 146px;
-  border-radius: 10px;
-  padding: 4px;
-}
-
-.form-control .form-select {
-  font-family: "Noto Serif", sans-serif;
-  display: flex;
-  text-align: center;
-  font-size: 14px;
-  width: 160px;
-  border-radius: 10px;
-  padding: 4px;
-  /* margin-left: 30px; */
-
-}
-
-.terms {
-
-  padding: 4px;
-  font-size: 0.8rem;
-  color: blanchedalmond;
-  font-family: "Noto Serif", sans-serif;
-
-}
-
-.btn {
-  font-size: 14px;
-  padding: 0.5rem;
-  border-radius: 10px;
-  font-family: "Noto Serif", sans-serif;
-  background-color: cornflowerblue;
-  color: white;
-  margin: 1rem;
-
-}
-
-.btn:hover {
-  cursor: pointer;
-  transition: 0.5s;
-  transform: scale(1.1);
-
-
-}
-
-.form-help {
-
-
-  font-size: 0.8rem;
-  color: blanchedalmond;
-  font-family: "Noto Serif", sans-serif;
-
-}
 
 
 
-#search {
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -611,19 +168,9 @@ Propiedades para el contenedor Flex, y los Flex items ---------------------*/
     font-size: 3vw;
   }
 
-  .logo-text {
-    display: none;
-  }
+  
 
-  .header nav {
-    margin-left: 40px;
-    margin-right: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-    padding: 10px 10px;
-  }
+  
 
   #banner {
     height: 400px;
@@ -659,29 +206,12 @@ Propiedades para el contenedor Flex, y los Flex items ---------------------*/
     font-size: 5vw;
   }
 
-  .logo-text {
-    font-size: 1.8vh;
-    margin-left: 0;
-    margin-right: 0;
-  }
+  
 
-  #logo img {
-
-    display: none;
-  }
+  
 
 
-  .header ul .lista {
-    display: none;
-  }
-
-  .header ul .linkNav {
-    font-size: 1.5vh;
-    margin-left: 0px;
-    display: flex;
-    list-style: none;
-    padding: 0.5rem 0.5rem;
-  }
+  
 
   #banner {
     height: 300px;
@@ -763,80 +293,19 @@ Propiedades para el contenedor Flex, y los Flex items ---------------------*/
 /* Clase Nº6:PLAN DE ESTUDIOS: Grid. Implementación
 de Grid. Maquetado con Flex y Grid. */
 
-nav {
-  margin-left: 40px;
-  margin-right: 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 60px;
-  padding: 10px 10px;
-}
-
-.listaNav {
-  display: flex;
-  gap: 2vw;
-  list-style: none;
-  padding: 0 4rem;
-}
-
-/* Centra el texto que info sobre películas 
-y series ilimitadas */
-.d-flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-/* Se agrega un scroll */
-.movies-scroller {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 0px 0px 40px 0px;
-}
-
-.movie-item-v2 {
-  border-radius: 20px;
-  width: 170px;
-  min-width: 170px;
-  font-size: 20px;
-  cursor: pointer;
-  margin-left: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  transition: 450ms all;
-  -webkit-transform-origin: center left;
-  transform-origin: center left;
-}
 
 
 
-.movie-item-detail-v2 {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
 
-.movies-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  justify-items: center;
-  row-gap: 20px;
-}
 
-.d-form {
-  width: 100%;
-  margin-bottom: 20px;
-}
 
-.d-iframe {
-  width: 100%;
-}
+
+
+
+
+
+
+
+
+
+
