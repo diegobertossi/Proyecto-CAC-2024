@@ -173,3 +173,8 @@ repetitivo, mejorando la interacción visual cuando se interactúa con ese eleme
   list-style: none;
   padding: 0 4rem;
 }
+.icon_logo{
+  /* max-width: 80px; */
+  max-height: 80px;
+  -webkit-box-reflect: below -2px linear-gradient(to button, transparent, rgba(0,0,0,0.8));
+}
