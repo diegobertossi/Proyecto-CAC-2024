@@ -64,6 +64,7 @@
   opacity: 0;
   background: var(--GradienteCelesteBlanco);
 }
+
 nav {
   margin-left: 40px;
   margin-right: 40px;
@@ -84,24 +85,28 @@ nav {
   font-size: 1.2rem;
   margin-left: 2rem;
 }
+
 /* Al pasar el cursor sobre el elemento #logo, se activa una
 animación que produce un efecto visual de sacudida y giro
 repetitivo, mejorando la interacción visual cuando se interactúa con ese elemento. */
 #logo:hover {
   animation: heartbeat 2s infinite;
 }
+
 .listaNav {
   list-style: none;
   display: flex;
   align-items: center;
 
 }
+
 .listaNav a {
   text-decoration: none;
   color: var(--azulClaro);
   font-weight: bold;
   font-size: 0.9rem;
 }
+
 .listaNav a:hover {
   color: var(--azulClaro);
   transform: scale(0.95);
@@ -114,6 +119,7 @@ repetitivo, mejorando la interacción visual cuando se interactúa con ese eleme
 .linkNav {
   padding: 0.5rem;
 }
+
 .linkNav .Login {
   background-color: var(--celeste);
   color: white;
@@ -138,10 +144,11 @@ repetitivo, mejorando la interacción visual cuando se interactúa con ese eleme
     height: 60px;
     padding: 10px 10px;
   }
+
   .logo-text {
     display: none;
   }
-  
+
 }
 
 @media screen and (max-width: 767px) {
@@ -156,11 +163,13 @@ repetitivo, mejorando la interacción visual cuando se interactúa con ese eleme
     list-style: none;
     padding: 0.5rem 0.5rem;
   }
+
   .logo-text {
     font-size: 1.8vh;
     margin-left: 0;
     margin-right: 0;
   }
+
   #logo img {
 
     display: none;
@@ -173,8 +182,28 @@ repetitivo, mejorando la interacción visual cuando se interactúa con ese eleme
   list-style: none;
   padding: 0 4rem;
 }
-.icon_logo{
+
+.icon_logo_container {
+  position: relative;
+}
+
+.icon_logo {
   /* max-width: 80px; */
-  max-height: 80px;
-  -webkit-box-reflect: below -2px linear-gradient(to button, transparent, rgba(0,0,0,0.8));
+  max-height: 30px;
+  /* -webkit-box-reflect: below -2px linear-gradient(to button, transparent, rgba(0,0,0,0.8)); */
+  /* background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); */
+  /* opacity: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,1)); */
+  /* -webkit-mask-image: -webkit-gradient(linear, top, bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 1))); */
+}
+
+.logo_logo_reflejo {
+  /* -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0))); */
+  /* mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); */
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  position: absolute;
+  left: 0;
+  top: 24px;
+  max-height: 30px;
+  transform: rotateX(120deg);
+  /* -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0)), linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)); */
 }
