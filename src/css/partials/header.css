@@ -36,15 +36,17 @@
 }
 
 .header {
-
+  /* display: flex; */
   background: var(--GradienteBlancoCeleste);
   color: #ffffff;
   position: fixed;
   top: 0;
+  right: 0;
   left: 0;
   width: 100%;
+  /* max-width: 1200px; */
+  /* margin: 0 auto; */
   z-index: 9999;
-
 }
 
 .header ul li .dropdown-content {
@@ -64,8 +66,7 @@
   opacity: 0;
   background: var(--GradienteCelesteBlanco);
 }
-
-nav {
+/* nav {
   margin-left: 40px;
   margin-right: 40px;
   display: flex;
@@ -73,8 +74,19 @@ nav {
   align-items: center;
   height: 60px;
   padding: 10px 10px;
+} */
+/* mal para hacerlo adaptable sera mas dificil ya que 
+las futuras modificaciones tendran menos privilegio 
+que las reglas señaladas con el selector general, por eso se usa clase*/
+.menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 60px; */
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
-
 #logo a {
   display: flex;
   justify-content: left;
@@ -83,7 +95,7 @@ nav {
   color: var(--azulClaro);
   font-weight: bold;
   font-size: 1.2rem;
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
 }
 .logo-text{
   /* -webkit-text-stroke: 0.2px white; */
@@ -103,10 +115,18 @@ repetitivo, mejorando la interacción visual cuando se interactúa con ese eleme
   list-style: none;
   display: flex;
   align-items: center;
-
+  /* gap: 1vw; */
+  /* padding: 0 4rem; */
+  margin: 0;
+}
+.listaNav {
+  /* list-style: none; */
 }
 .listaNav > li{
   position: relative;
+  display: block;
+  padding: 0;
+  margin: 0;
 }
 .listaNav a {
   text-decoration: none;
@@ -114,8 +134,10 @@ repetitivo, mejorando la interacción visual cuando se interactúa con ese eleme
   font-weight: bold;
   font-size: 0.9rem;
   box-sizing: border-box;
-  padding: 0.5rem;
+  padding: 1.5rem;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .listaNav a:hover {
@@ -123,7 +145,7 @@ repetitivo, mejorando la interacción visual cuando se interactúa con ese eleme
   transform: scale(0.95);
   box-shadow: 0 0 10px rgba(0, 0, 0, 1);
   border-radius: 8px;
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
   /* position: absolute; */
   
   transition: transform 0.3s, box-shadow 0.3s;
@@ -191,9 +213,9 @@ repetitivo, mejorando la interacción visual cuando se interactúa con ese eleme
 
 .listaNav {
   display: flex;
-  gap: 2vw;
+  /* gap: 0 2vw; */
   list-style: none;
-  padding: 0 4rem;
+  /* padding: 0 4rem; */
 }
 
 .icon_logo_container {
