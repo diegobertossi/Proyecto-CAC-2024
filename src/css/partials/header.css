@@ -22,7 +22,7 @@
 
 .header ul {
   position: relative;
-  padding-left: 2rem;
+  /* padding-left: 2rem; */
 }
 
 /* Mostrar el menú desplegable al hacer hover sobre el enlace */
@@ -39,7 +39,7 @@
   /* display: flex; */
   background: var(--GradienteBlancoCeleste);
   color: #ffffff;
-  position: fixed;
+  position: sticky;
   top: 0;
   right: 0;
   left: 0;
@@ -165,8 +165,8 @@ repetitivo, mejorando la interacción visual cuando se interactúa con ese eleme
 
 
 .listaItem {
-  padding: 0.5rem;
-  margin-right: 2rem;
+  /* padding: 0.5rem; */
+  /* margin-right: 2rem; */
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
