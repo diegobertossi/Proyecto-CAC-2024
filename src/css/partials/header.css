@@ -20,51 +20,131 @@
   }
 }
 
-.header ul {
-  position: relative;
-  /* padding-left: 2rem; */
-}
+
 
 /* Mostrar el menú desplegable al hacer hover sobre el enlace */
-.header ul li:hover .dropdown-content {
-  opacity: 1;
-}
+/* .header ul li:hover .dropdown-content { */
 
-.header ul li .dropdown-content li {
+
+/* .header ul li .dropdown-content li { */
+.header .listaNav li .dropdown-content li {
   text-decoration: none;
   list-style: none;
 }
 
 .header {
   /* display: flex; */
-  background: var(--GradienteBlancoCeleste);
+  background: var(--GradienteBlancoTop);
   color: #ffffff;
   position: sticky;
   top: 0;
   right: 0;
   left: 0;
+  /* overflow: hidden; */
   width: 100%;
   /* max-width: 1200px; */
   /* margin: 0 auto; */
-  z-index: 9999;
+  /* z-index: 9; */
 }
 
-.header ul li .dropdown-content {
-  position: absolute;
-  z-index: 2;
-
-  /* top: 3.2rem; */
-  right: 0.1rem;
-  transition: all 0.5s;
-
+.listaNav {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  /* gap: 0 2vw; */
+  list-style: none;
+  /* padding: 0 4rem; */
+  /* .header ul { */
+  /* position: relative; */
+  /* padding-left: 2rem; */
+  /* padding: 0 20px; */
+  /* background: var(--GradienteBlancoCeleste); */
+  /* overflow: hidden; */
+  /* object-fit: cover; */
+  /* z-index: 9; */
   align-items: center;
+  margin: 0;
+}
 
+ .listaNav li .sub_menu {
+  /* display: flex; */
+  /* position: absolute; */
+  /* position: relative;
+  display: flex;
+  justify-content: center;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  background-color: orange;
+  text-align: center; */
+  /* border: 1px solid orange; */
+  position: relative;
+  /* z-index: -1; */
+  /* z-index: 0; */
+  /* background: var(--GradienteBlancoCeleste); */
+}
+
+ .listaNav li .sub_menu_aux {
+  /* display: block; */
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+  right: 0;
+  /* top: -100%; */
+  z-index: -1;
+  /* overflow: hidden; */
+  /* overflow: visible; */
+  /* object-fit: cover; */
+  /* bottom: -100%; */
+  top: -100%;
+  /* top: 0; */
+  transition: 0.6s;
+  /* top: -100%; */
+  /* text-align: center; */
+  /* transform: translateX(-50%); */
+}
+ .listaNav .sub_menu:hover .sub_menu_aux {
+  top: 100%;
+  overflow: visible;
+}
+.punto {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.sub_menu_aux_2 {
+  /* background-color: green; */
+
+  /* position: relative; */
+  /* text-align: center; */
+  /* text-align: right; */
+}
+
+ .listaNav li .dropdown-content {
+  position: absolute;
+  /* margin: 0 auto; */
+  /* position: absolute; */
+  /* position: relative; */
+  /* z-index: -1; */
+  z-index: 9;
+  /* object-fit: scale-down; */
+  /* top: 3.2rem; */
+  /* transition: all 0.5s; */
+  /* 6547 */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* top: -100%; */
+  /* transform: translateY(-100%) translateZ(-1px); */
+  /* transform: translateY(-100%); */
+  /* right: 0; */
+  /* left: 0; */
   /* display: block; con eso hace lo mismo */
-  opacity: 0;
+  /* opacity: 0; */
+  /* width: 100%; */
   background: var(--GradienteCelesteBlanco);
+  /* background-color: red; */
+  /* opacity: 0.7; */
 }
 
 /* nav {
@@ -79,16 +159,18 @@
 /* mal para hacerlo adaptable sera mas dificil ya que 
 las futuras modificaciones tendran menos privilegio 
 que las reglas señaladas con el selector general, por eso se usa clase*/
-.menu{
+.menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   /* height: 60px; */
   max-width: 1200px;
-  padding: 0 20px;
+  background: var(--GradienteBlancoTop);
+  padding: 0 30px;
   margin: 0 auto;
 }
-#logo a {
+
+#logo > a {
   display: flex;
   justify-content: left;
   align-items: center;
@@ -98,13 +180,16 @@ que las reglas señaladas con el selector general, por eso se usa clase*/
   font-size: 1.2rem;
   /* margin-left: 2rem; */
 }
-.logo-text{
+.logo-text {
   /* -webkit-text-stroke: 0.2px white; */
   text-shadow: 0 -1px 4px #fff, 0 -1px 10px #fff, 0 -10px 20px #fff, 0 -18px 40px blue;
   font-size: 18px;
   font-weight: 800;
-
 }
+
+/*  .listaNav .sub_menu:hover .dropdown-content { */
+
+
 /* Al pasar el cursor sobre el elemento #logo, se activa una
 animación que produce un efecto visual de sacudida y giro
 repetitivo, mejorando la interacción visual cuando se interactúa con ese elemento. */
@@ -112,22 +197,14 @@ repetitivo, mejorando la interacción visual cuando se interactúa con ese eleme
   animation: heartbeat 2s infinite;
 }
 
-.listaNav {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  margin: 0;
-  white-space: nowrap;
-
-}
-
-.listaNav > li{
+.listaNav>li {
   position: relative;
   display: block;
   padding: 0;
   margin: 0;
 }
-.listaNav a {
+
+.listaNav .lista , .linkNav_2{
   text-decoration: none;
   color: var(--azulClaro);
   font-weight: bold;
@@ -136,22 +213,30 @@ repetitivo, mejorando la interacción visual cuando se interactúa con ese eleme
   padding: 1.5rem;
   display: flex;
   align-items: center;
+  white-space: nowrap;
   justify-content: center;
+  margin: 0 auto;
 }
 
-.listaNav a:hover {
+.listaNav .lista:hover {
   color: var(--azulClaro);
   transform: scale(0.95);
   box-shadow: 0 0 10px rgba(0, 0, 0, 1);
   border-radius: 8px;
   /* padding: 0.5rem; */
   /* position: absolute; */
-  
+
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .linkNav {
   padding: 0.5rem;
+}
+.linkNav_2 {
+  /* padding: 0.5rem;   */
+  /* padding: 1.5rem; */
+  /* white-space: nowrap; */
+
 }
 
 .linkNav .Login {
@@ -164,6 +249,7 @@ repetitivo, mejorando la interacción visual cuando se interactúa con ese eleme
 
 
 .listaItem {
+  display: flex;
   /* padding: 0.5rem; */
   /* margin-right: 2rem; */
 }
@@ -186,17 +272,17 @@ repetitivo, mejorando la interacción visual cuando se interactúa con ese eleme
 }
 
 @media screen and (max-width: 767px) {
-  .header ul .lista {
+  /* .header .listaNav .lista {
     display: none;
-  }
+  } */
 
-  .header ul .linkNav {
+  /* .header .listaNav .linkNav {
     font-size: 1.5vh;
     margin-left: 0px;
     display: flex;
     list-style: none;
     padding: 0.5rem 0.5rem;
-  }
+  } */
 
   .logo-text {
     font-size: 1.8vh;
@@ -204,17 +290,10 @@ repetitivo, mejorando la interacción visual cuando se interactúa con ese eleme
     margin-right: 0;
   }
 
-  #logo img {
+  /* #logo img {
 
     display: none;
-  }
-}
-
-.listaNav {
-  display: flex;
-  /* gap: 0 2vw; */
-  list-style: none;
-  /* padding: 0 4rem; */
+  } */
 }
 
 .icon_logo_container {

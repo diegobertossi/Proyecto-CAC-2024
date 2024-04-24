@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
-  rel="stylesheet" />
+    rel="stylesheet" />
   <link rel="stylesheet" href="./css/home.css" />
 
   <!-- vinculación fontawesome -->
@@ -24,7 +24,7 @@
     <nav class="menu">
       <!-- Logo -->
       <div id="logo">
-        <a href="/">
+        <a  href="/">
           <!-- <i class="fa-solid fa-futbol"></i> -->
 
           <span class="logo-text">CAMPEONES DEL MUNDO</span>
@@ -34,7 +34,6 @@
           </div>
         </a>
       </div>
-
       <!-- hipervínculos del menú -->
       <ul class="listaNav">
         <li><a class="lista" href="#">Inicio</a></li>
@@ -42,17 +41,22 @@
         <li><a class="lista" href="#productos">Productos</a></li>
         <li><a class="lista" href="#quienes-somos">Quienes Somos</a></li>
         <li><a class="lista" href="./templates/contacto.html">Contacto</a></li>
-        <li>
-          <a class="linkNav Login" href="#">Login</a>
+        <li class="sub_menu">
+          <a class="linkNav Login lista" href="#">Login</a>
           <!-- menu desplegable -->
-          <ul class="dropdown-content">
-            <li class="listaItem">
-              <a class="linkNav" href="./templates/iniciar-sesion.html">Iniciar sesión</a>
-            </li>
-            <li class="listaItem">
-              <a class="linkNav" href="./templates/register.html">Registrarse</a>
-            </li>
-          </ul>
+          <div class="sub_menu_aux">
+            <div class="punto">
+              <!-- <div class="sub_menu_aux_2"> -->
+              <ul class="dropdown-content">
+                <li class="listaItem">
+                  <a class="lista" href="./templates/iniciar-sesion.html">Iniciar sesión</a>
+                </li>
+                <li class="listaItem">
+                  <a class="lista" href="./templates/register.html">Registrarse</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </li>
       </ul>
     </nav>

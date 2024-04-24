@@ -2,8 +2,11 @@
 
 :root {
     /* configuración de colores */
-    --GradienteCelesteBlanco: linear-gradient(0deg,
+    --GradienteCelesteBlanco: linear-gradient(180deg,
             rgba(255, 255, 255) 0%,
+            rgba(117, 170, 219) 100%);
+    --GradienteBlancoTop: linear-gradient(0deg,
+            rgba(255, 255, 255) 10%,
             rgba(117, 170, 219) 100%);
     /* --GradienteBlancoCeleste: linear-gradient(90deg,
             rgba(117, 170, 219) 0%,
