@@ -1,3 +1,21 @@
+#banner-register {
+    background-image: url("../../img/argentina-world.jpg");
+    background-size: cover;
+    background-position: top;
+    height: 82.3vh;
+    box-shadow: inset 0 0 0 2000px rgba(84, 84, 84, 0.5);
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+
+
 #form-wrapper {
 
     display: flex;
