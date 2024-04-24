@@ -40,7 +40,6 @@
   top: 0;
   right: 0;
   left: 0;
-  /* overflow: hidden; */
   width: 100%;
   /* max-width: 1200px; */
   /* margin: 0 auto; */
@@ -143,8 +142,6 @@
   /* opacity: 0; */
   /* width: 100%; */
   background: var(--GradienteCelesteBlanco);
-  /* background-color: red; */
-  /* opacity: 0.7; */
 }
 
 /* nav {
@@ -178,7 +175,7 @@ que las reglas señaladas con el selector general, por eso se usa clase*/
   color: var(--azulClaro);
   font-weight: bold;
   font-size: 1.2rem;
-  /* margin-left: 2rem; */
+  margin-left: 2rem;
 }
 .logo-text {
   /* -webkit-text-stroke: 0.2px white; */
@@ -186,10 +183,6 @@ que las reglas señaladas con el selector general, por eso se usa clase*/
   font-size: 18px;
   font-weight: 800;
 }
-
-/*  .listaNav .sub_menu:hover .dropdown-content { */
-
-
 /* Al pasar el cursor sobre el elemento #logo, se activa una
 animación que produce un efecto visual de sacudida y giro
 repetitivo, mejorando la interacción visual cuando se interactúa con ese elemento. */
