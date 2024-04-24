@@ -22,36 +22,43 @@
 
 <body>
   <!-- Encabezado -->
-  <header class="header" id="header">
-    <nav>
+  <header class="header">
+    <nav class="menu">
       <!-- Logo -->
       <div id="logo">
         <a href="/">
           <!-- <i class="fa-solid fa-futbol"></i> -->
 
           <span class="logo-text">CAMPEONES DEL MUNDO</span>
-          <img src="../static/img/Golden-Sta.png" alt="logo Estrellas">
+          <div class="icon_logo_container">
+            <img src="./img/Golden-Sta.png" class="icon_logo" alt="imagen de 3 Estrellas">
+            <img src="./img/Golden-Sta.png" class="logo_logo_reflejo" alt="imagen de 3 Estrellas">
+          </div>
         </a>
       </div>
-
       <!-- hipervínculos del menú -->
       <ul class="listaNav">
-        <li><a class="lista" href="../index.html#card-banner container">Inicio</a></li>
-        <li><a class="lista" href="../index.html#galeria">Galería</a></li>
-        <li><a class="lista" href="../index.html#productos">Productos</a></li>
-        <li><a class="lista" href="../index.html#quienes-somos">Quienes Somos</a></li>
+        <li><a class="lista" href="#">Inicio</a></li>
+        <li><a class="lista" href="./galeria.html">Galería</a></li>
+        <li><a class="lista" href="./productos.html">Productos</a></li>
+        <li><a class="lista" href="./quienes-somos.html">Quienes Somos</a></li>
         <li><a class="lista" href="./contacto.html">Contacto</a></li>
-        <li>
-          <a class="linkNav Login" href="./iniciar-sesion.html">Login</a>
+        <li class="sub_menu">
+          <a class="linkNav Login lista" href="#">Login</a>
           <!-- menu desplegable -->
-          <ul class="dropdown-content">
-            <li class="listaItem">
-              <a class="linkNav" href="./iniciar-sesion.html">Iniciar sesión</a>
-            </li>
-            <li class="listaItem">
-              <a class="linkNav" href="./register.html">Registrarse</a>
-            </li>
-          </ul>
+          <div class="sub_menu_aux">
+            <div class="punto">
+              <!-- <div class="sub_menu_aux_2"> -->
+              <ul class="dropdown-content">
+                <li class="listaItem">
+                  <a class="lista" href="./views/iniciar-sesion.html">Iniciar sesión</a>
+                </li>
+                <li class="listaItem">
+                  <a class="lista" href="./views/register.html">Registrarse</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </li>
       </ul>
     </nav>
