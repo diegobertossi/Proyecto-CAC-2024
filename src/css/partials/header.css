@@ -66,6 +66,7 @@
   opacity: 0;
   background: var(--GradienteCelesteBlanco);
 }
+
 /* nav {
   margin-left: 40px;
   margin-right: 40px;
@@ -115,13 +116,11 @@ repetitivo, mejorando la interacción visual cuando se interactúa con ese eleme
   list-style: none;
   display: flex;
   align-items: center;
-  /* gap: 1vw; */
-  /* padding: 0 4rem; */
   margin: 0;
+  white-space: nowrap;
+
 }
-.listaNav {
-  /* list-style: none; */
-}
+
 .listaNav > li{
   position: relative;
   display: block;

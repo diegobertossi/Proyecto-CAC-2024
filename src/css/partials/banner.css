@@ -33,7 +33,7 @@ y series ilimitadas */
     color: #ffffff;
     padding: 0.5rem 1rem;
     margin-top: 5rem;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 1.2rem;
     font-weight: bolder;
     text-decoration: none;
@@ -41,12 +41,6 @@ y series ilimitadas */
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.btn-Registrarse {
-    background-color: var(--primary-color);
-    padding: 10px;
-    border-radius: 10px;
-    color: #fff;
-}
 
 .btn-Registrarse:hover {
     background-color: var(--celeste);
