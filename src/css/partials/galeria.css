@@ -33,10 +33,12 @@ cada imagen de cada película y muestra los detalles */
 
 .movie-item:hover {
     opacity: 0.7;
+    
 }
 
 .movie-item:hover .movie-item-detail {
     bottom: 0;
+    z-index: -1;
 }
 
 /* Agrega una estrella al lado del subtitulo */

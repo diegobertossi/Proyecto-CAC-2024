@@ -26,12 +26,6 @@
 /* .header ul li:hover .dropdown-content { */
 
 
-/* .header ul li .dropdown-content li { */
-.header .listaNav li .dropdown-content li {
-  text-decoration: none;
-  list-style: none;
-}
-
 .header {
   /* display: flex; */
   background: var(--GradienteBlancoTop);
@@ -143,6 +137,15 @@
   /* width: 100%; */
   background: var(--GradienteCelesteBlanco);
 }
+.dropdown-content .lista{
+  width: 100%;
+}
+
+/* .header ul li .dropdown-content li { */
+.header .listaNav li .dropdown-content li {
+  text-decoration: none;
+  list-style: none;
+}
 
 /* nav {
   margin-left: 40px;
@@ -160,6 +163,7 @@ que las reglas señaladas con el selector general, por eso se usa clase*/
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   /* height: 60px; */
   max-width: 1200px;
   background: var(--GradienteBlancoTop);
