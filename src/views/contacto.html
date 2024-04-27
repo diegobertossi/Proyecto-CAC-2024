@@ -5,10 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- vinculación con estilos y favicon -->
-  <!-- {% comment %} -->
-  <link rel="stylesheet" href="../static/css/style.css" /> 
-  <!-- {% endcomment %} -->
-  <link rel="stylesheet" href="../css/contacto.css" />
+  <!-- <link rel="stylesheet" href="../static/css/style.css" /> -->
   <link rel="shortcut icon" href="../icons/favicon.ico" type="image/x-icon" />
   <title>Campeones del Mundo</title>
   <!-- vinculación con google-fonts -->
@@ -16,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
+  <link rel="stylesheet" href="../css/home.css" />
 
   <!-- vinculación fontawesome -->
   <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
@@ -39,11 +37,11 @@
       </div>
       <!-- hipervínculos del menú -->
       <ul class="listaNav">
-        <li><a class="lista" href="#">Inicio</a></li>
-        <li><a class="lista" href="./galeria.html">Galería</a></li>
-        <li><a class="lista" href="./productos.html">Productos</a></li>
-        <li><a class="lista" href="./quienes-somos.html">Quienes Somos</a></li>
-        <li><a class="lista" href="./contacto.html">Contacto</a></li>
+        <li><a class="lista" href="../index.html#">Inicio</a></li>
+        <li><a class="lista" href="../index.html#galeria">Galería</a></li>
+        <li><a class="lista" href="../index.html#productos">Productos</a></li>
+        <li><a class="lista" href="../index.html#quienes-somos">Quienes Somos</a></li>
+        <li><a class="lista" href="../views/contacto.html">Contacto</a></li>
         <li class="sub_menu">
           <a class="linkNav Login lista" href="#">Login</a>
           <!-- menu desplegable -->
@@ -52,10 +50,10 @@
               <!-- <div class="sub_menu_aux_2"> -->
               <ul class="dropdown-content">
                 <li class="listaItem">
-                  <a class="lista" href="./views/iniciar-sesion.html">Iniciar sesión</a>
+                  <a class="lista" href="../views/iniciar-sesion.html">Iniciar sesión</a>
                 </li>
                 <li class="listaItem">
-                  <a class="lista" href="./views/register.html">Registrarse</a>
+                  <a class="lista" href="../views/register.html">Registrarse</a>
                 </li>
               </ul>
             </div>
@@ -65,10 +63,14 @@
     </nav>
   </header>
   <main class="main">
-
     <section id="banner-register" class="d-flex">
+      <div class="card-banner container">
+
+
 
     </section>
+
+
   </main>
   <footer class="footer-container">
     <div class="footer">
@@ -96,6 +98,11 @@
       </div>
     </div>
   </footer>
+  <!-- <footer class="footer-contacto" id="footer">
+    <a href="">Términos y condiciones</a>
+    <a href="">Preguntas Frecuentes</a>
+    <a href="">Ayuda</a>
+  </footer> -->
   <!-- este codigo genera espacios en lanco para generar una separación=> &nbsp; -->
 
 </body>
