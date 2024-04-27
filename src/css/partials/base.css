@@ -33,6 +33,7 @@
 
     --bg-input-color: hwb(9 1% 44% / 0.575);
     /*fuente primaria*/
+    --alto-btn-menu:40px;
 }
 
 * {

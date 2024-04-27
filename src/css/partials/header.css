@@ -45,6 +45,7 @@
   display: flex;
   /* gap: 0 2vw; */
   list-style: none;
+  flex-wrap: wrap;
   /* padding: 0 4rem; */
   /* .header ul { */
   /* position: relative; */
@@ -251,23 +252,51 @@ repetitivo, mejorando la interacción visual cuando se interactúa con ese eleme
   /* padding: 0.5rem; */
   /* margin-right: 2rem; */
 }
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .header nav {
-    margin-left: 40px;
-    margin-right: 40px;
+.btn_menu{
+  display: none;
+  width: var(--alto-btn-menu);
+  height: var(--alto-btn-menu);
+  background-color: white;
+  font-size: 24px;
+  color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: center;  
+  align-items: center;
+}
+/* @media screen and (max-width: 768px){ */
+@media screen and (max-width: 480px){
+  .btn_menu{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-    padding: 10px 10px;
   }
-
-  .logo-text {
+  .menu{
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+  }
+  .listaNav{
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .header .btn_menu {
+    /*  esto rompe el header y deja ver el boton */
+    /* margin-left: 40px; */
+    /* margin-right: 40px; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* height: 60px; */
+    /* padding: 10px 10px; */
+  }
+  
+  /* .logo-text {
     display: none;
-  }
+  } */
 
 }
+
 
 @media screen and (max-width: 767px) {
   /* .header .listaNav .lista {
@@ -283,9 +312,9 @@ repetitivo, mejorando la interacción visual cuando se interactúa con ese eleme
   } */
 
   .logo-text {
-    font-size: 1.8vh;
-    margin-left: 0;
-    margin-right: 0;
+    /* font-size: 1.8vh; */
+    /* margin-left: 0; */
+    /* margin-right: 0; */
   }
 
   /* #logo img {

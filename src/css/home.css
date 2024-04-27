@@ -1,4 +1,5 @@
 @import url("./partials/base.css");
+@import url('./icons.css');
 @import url("./partials/header.css");
 @import url("./partials/banner.css");
 @import url("./partials/galeria.css");
@@ -58,7 +59,7 @@ h2 {
     } */
 
     #banner-register {
-        height: 81.4vh;
+        /* height: 81.4vh; */
     }
 
     #banner {
