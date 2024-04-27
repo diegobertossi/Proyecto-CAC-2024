@@ -28,6 +28,7 @@
 
 .header {
   /* display: flex; */
+  z-index: 10;
   background: var(--GradienteBlancoTop);
   color: #ffffff;
   position: sticky;
