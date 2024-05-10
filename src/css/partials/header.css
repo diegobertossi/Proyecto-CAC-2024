@@ -20,11 +20,8 @@
   }
 }
 
-
-
 /* Mostrar el menú desplegable al hacer hover sobre el enlace */
 /* .header ul li:hover .dropdown-content { */
-
 
 .header {
   /* display: flex; */
@@ -59,7 +56,7 @@
   margin: 0;
 }
 
- .listaNav li .sub_menu {
+.listaNav li .sub_menu {
   /* display: flex; */
   /* position: absolute; */
   /* position: relative;
@@ -77,7 +74,7 @@
   /* background: var(--GradienteBlancoCeleste); */
 }
 
- .listaNav li .sub_menu_aux {
+.listaNav li .sub_menu_aux {
   /* display: block; */
   position: absolute;
   /* top: 0; */
@@ -96,7 +93,7 @@
   /* text-align: center; */
   /* transform: translateX(-50%); */
 }
- .listaNav .sub_menu:hover .sub_menu_aux {
+.listaNav .sub_menu:hover .sub_menu_aux {
   top: 100%;
   overflow: visible;
 }
@@ -114,7 +111,7 @@
   /* text-align: right; */
 }
 
- .listaNav li .dropdown-content {
+.listaNav li .dropdown-content {
   position: absolute;
   /* margin: 0 auto; */
   /* position: absolute; */
@@ -139,7 +136,7 @@
   /* width: 100%; */
   background: var(--GradienteCelesteBlanco);
 }
-.dropdown-content .lista{
+.dropdown-content .lista {
   width: 100%;
 }
 
@@ -185,7 +182,8 @@ que las reglas señaladas con el selector general, por eso se usa clase*/
 }
 .logo-text {
   /* -webkit-text-stroke: 0.2px white; */
-  text-shadow: 0 -1px 4px #fff, 0 -1px 10px #fff, 0 -10px 20px #fff, 0 -18px 40px blue;
+  text-shadow: 0 -1px 4px #fff, 0 -1px 10px #fff, 0 -10px 20px #fff,
+    0 -18px 40px blue;
   font-size: 18px;
   font-weight: 800;
 }
@@ -196,14 +194,15 @@ repetitivo, mejorando la interacción visual cuando se interactúa con ese eleme
   animation: heartbeat 2s infinite;
 }
 
-.listaNav>li {
+.listaNav > li {
   position: relative;
   display: block;
   padding: 0;
   margin: 0;
 }
 
-.listaNav .lista , .linkNav_2{
+.listaNav .lista,
+.linkNav_2 {
   text-decoration: none;
   color: var(--azulClaro);
   font-weight: bold;
@@ -235,7 +234,6 @@ repetitivo, mejorando la interacción visual cuando se interactúa con ese eleme
   /* padding: 0.5rem;   */
   /* padding: 1.5rem; */
   /* white-space: nowrap; */
-
 }
 
 .linkNav .Login {
@@ -246,13 +244,12 @@ repetitivo, mejorando la interacción visual cuando se interactúa con ese eleme
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-
 .listaItem {
   display: flex;
   /* padding: 0.5rem; */
   /* margin-right: 2rem; */
 }
-.btn_menu{
+.btn_menu {
   display: none;
   width: var(--alto-btn-menu);
   height: var(--alto-btn-menu);
@@ -262,65 +259,91 @@ repetitivo, mejorando la interacción visual cuando se interactúa con ese eleme
   position: fixed;
   top: 0;
   left: 0;
-  justify-content: center;  
+  justify-content: center;
   align-items: center;
 }
 /* @media screen and (max-width: 768px){ */
-@media screen and (max-width: 480px){
-  .btn_menu{
-    display: flex;
-  }
-  .menu{
-    display: flex;
-    box-sizing: border-box;
-    flex-wrap: wrap;
-  }
-  .listaNav{
-    flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .header .btn_menu {
-    /*  esto rompe el header y deja ver el boton */
-    /* margin-left: 40px; */
-    /* margin-right: 40px; */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* height: 60px; */
-    /* padding: 10px 10px; */
-  }
+@media screen and (max-width: 480px) {
+
+.logoTextoImg{
   
-  /* .logo-text {
-    display: none;
-  } */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
 
 }
 
+#logo{
+  transform: scale(0.7);
+  
+}
+.logo-text{
+  text-align: center;
+  font-size: 0.7 rem;
+}
 
-@media screen and (max-width: 767px) {
-  /* .header .listaNav .lista {
+  .header .listaNav .lista {
     display: none;
-  } */
-
-  /* .header .listaNav .linkNav {
-    font-size: 1.5vh;
-    margin-left: 0px;
-    display: flex;
-    list-style: none;
-    padding: 0.5rem 0.5rem;
-  } */
-
-  .logo-text {
-    /* font-size: 1.8vh; */
-    /* margin-left: 0; */
-    /* margin-right: 0; */
   }
 
-  /* #logo img {
+  .header .listaNav .linkNav,
+  .header .listaNav ul .lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1123px) {
+  .header .listaNav .lista {
     display: none;
-  } */
+  }
+
+  .header .listaNav .linkNav,
+  .header .listaNav ul .lista {
+    display: flex;
+    /* text-size-adjust: 1; */
+  }
+
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* lex-wrap: wrap; */
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .header .listaNav .lista {
+    display: none;
+  }
+
+  .header .listaNav .linkNav,
+  .header .listaNav ul .lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+
 }
 
 .icon_logo_container {
@@ -330,6 +353,7 @@ repetitivo, mejorando la interacción visual cuando se interactúa con ese eleme
 .icon_logo {
   /* max-width: 80px; */
   max-height: 30px;
+  display: flex;
   /* -webkit-box-reflect: below -2px linear-gradient(to button, transparent, rgba(0,0,0,0.8)); */
   /* background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); */
   /* opacity: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,1)); */
