@@ -96,9 +96,9 @@ h2 {
     }
 
     #footer {
-        flex-direction: column;
+        /* flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: center; */
     }
 }
 
@@ -169,7 +169,7 @@ h2 {
         font-family: "Noto Serif", sans-serif;
     }
 
-    #footer {
+    /* #footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -177,7 +177,7 @@ h2 {
 
     #footer a {
         padding: 2px 0px;
-    }
+    } */
 }
 
 /* Clase Nº6:PLAN DE ESTUDIOS: Grid. Implementación
