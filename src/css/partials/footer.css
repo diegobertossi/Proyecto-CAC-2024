@@ -143,6 +143,7 @@
 
 
   .col-3 img {
+    margin-top: 1rem;
     height: 24px;
   }
 
@@ -178,10 +179,13 @@
   }
 
   .footer p {
+    margin-top: 0.5rem;
     font-size: 0.6rem;
+    font
   }
 
   .col-3 img {
+    margin-top: 1rem;
     height: 32px;
   }
 
