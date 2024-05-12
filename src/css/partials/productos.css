@@ -1,5 +1,5 @@
 #productos {
-    margin: 50px 0px;
+    margin:50px 0px;
 }
 
 /* Se agrega un scroll */
@@ -10,7 +10,8 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 0px 0px 40px 0px;
+    padding: 0px 0px 50px 0px;
+   
 }
 
 .movie-item-v2 {

@@ -1,25 +1,54 @@
 #quienes-somos p {
-    margin: 1rem 5%;
+  margin-inline: 12rem;
+  margin-block: 3rem;
+  text-align: center;
+  
   }
   
+
+
   .titulo {
     background-color: rgb(225 225 225);
-  
-    color: var(--azulClaro);
-  
+    color: var(--azulClaro); 
     border-color: #002e55;
-  
     border-radius: 20px 20px 0px 0px;
-    padding-top: 0.2rem;
+    margin-top: 1rem;
+    padding-top: 0.1rem;
     padding-bottom: 0.2rem;
     line-height: 2rem;
-    /* padding: 1rem 1rem 5rem 5 rem; */
+    margin-inline: 10rem;
+    
+    
   }
   
   .fondotexto {
     height: 25px;
     background-color: #c1c2c8;
     border-radius: 0px 0px 20px 20px;
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
+    margin-inline: 10rem;
   }
+  
+
+  @media screen and (max-width: 768px) {
+
+    #quienes-somos p {
+    margin-inline: 2rem;
+  }
+  .titulo {
+
+    margin-inline: 1rem;
+    
+    
+  }
+  
+  .fondotexto {
+
+    margin-inline: 1rem;
+  }
+
+
+
+
+}
   

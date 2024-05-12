@@ -42,7 +42,6 @@ h2 {
 #galeria h2,
 #productos h2,
 #quienes-somos h2 {
-
   color: var(--azulClaro);
   margin: 30px 0px;
   text-align: center;
