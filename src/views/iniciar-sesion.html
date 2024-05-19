@@ -1,44 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- vinculación con estilos y favicon -->
+    <!-- <link rel="stylesheet" href="../static/css/style.css" /> -->
+    <link rel="shortcut icon" href="../icons/favicon.ico" type="image/x-icon" />
+    <title>Campeones del Mundo</title>
+    <!-- vinculación con google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/home.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- vinculación con estilos y favicon -->
-  <!-- <link rel="stylesheet" href="../static/css/style.css" /> -->
-  <link rel="shortcut icon" href="../icons/favicon.ico" type="image/x-icon" />
-  <title>Campeones del Mundo</title>
-  <!-- vinculación con google-fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="../css/home.css" />
+    <!-- vinculación fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/f7fb471b65.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-  <!-- vinculación fontawesome -->
-  <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-  <!-- Encabezado -->
-  <header class="header" id="idHeaderSecciones">
-    <!-- Agregado por JS -->
-  </header>
-  <main class="main">
-    <section id="banner-register" class="d-flex">
+  <body>
+    <!-- Encabezado -->
+    <header class="header" id="idHeaderSecciones">
+       <!-- Agregado por JS -->
+    </header>
+    <main class="main">
+       <section id="banner-register" class="d-flex">
       <div class="card-banner container">
-
+        <section id="form-wrapper">
+          <form action="#" method="post" novalidate id="form-register">
+            <h2>Iniciar Sesión</h2>
+          
+            <div class="form-control">
+              <!-- <label for="email">Email</label> -->
+              <input class="controls" type="email" name="email" required id="email" placeholder="Ingrese su email">
+            </div>
+            <div class="form-control">
+              <!-- <label for="passw">Contraseña</label> -->
+              <input class="controls" type="password" name="name" required id="passw "
+                placeholder="Ingrese su Contraseña">
+            </div>
+            
+            <button class="btn iniciarSesion" type="submit">Iniciar Sesión</button>
+           
+            <div class="form-help">
+              <a href="#">Registrarse</a>
+            </div>
+          </form>
+        </section>
 
 
     </section>
 
+    </main>
+    <footer class="footer-container" id="idFooterSecciones">
+       <!-- Agregado por JS -->
+    </footer>
 
-  </main>
-  <footer class="footer-container" id="idFooter">
- <!-- Agregado por JS -->
-  </footer>
- 
-  <script src="../JS/index.js"></script>
-</body>
-
+    <script src="../JS/index.js"></script>
+  </body>
 </html>

@@ -49,17 +49,7 @@ h2 {
 
 /* Extra large devices (1200px and up) */
 @media only screen and (min-width: 1367px) {
-    /* .header nav{
-      height: 11vh;
-    } */
 
-    /* #header-register {
-      height: 11vh;
-    } */
-
-    #banner-register {
-        /* height: 81.4vh; */
-    }
 
     #banner {
         height: 91.5vh;
@@ -67,9 +57,7 @@ h2 {
 }
 
 
-/* @media screen and (min-width: 1024px) and (max-width: 1366px) {
-  
-  } */
+
 
 /* TABLETS */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -95,11 +83,7 @@ h2 {
         padding: 0px 75px;
     }
 
-    #footer {
-        /* flex-direction: column;
-        align-items: center;
-        justify-content: center; */
-    }
+
 }
 
 /* CELULARES */
@@ -169,16 +153,7 @@ h2 {
         font-family: "Noto Serif", sans-serif;
     }
 
-    /* #footer {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #footer a {
-        padding: 2px 0px;
-    } */
 }
 
-/* Clase Nº6:PLAN DE ESTUDIOS: Grid. Implementación
-  de Grid. Maquetado con Flex y Grid. */
+
+

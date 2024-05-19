@@ -70,8 +70,8 @@ let footer = `
       </div>
       <div class="col-3">
         <strong>descarga nuestras app</strong>
-        <img src="../img/download_app.png" alt="">
-        <img src="../img/google_play.png" alt="">
+        <img src="./img/download_app.png" alt="">
+        <img src="./img/google_play.png" alt="">
       </div>
     </div>`
 
@@ -129,6 +129,35 @@ let footer = `
 
 
 
+    let footerSecciones = `
+<div class="footer">
+      <div class="col-1">
+        <strong>Mas sobre nosotros</strong>
+        <p>politicas de privacidad</p>
+        <p>terminos de uso</p>
+        <p>soporte tecnico de la web</p>
+      </div>
+
+      <div class="col-2">
+        <strong>Redes sociales</strong>
+        <div class="lista-iconos">
+          <span class="social-1"></span>
+          <span class="social-2"></span>
+          <!-- <span class="social-3"></span> -->
+          <span class="social-4"></span>
+          <!-- <span class="social-5"></span> --> 
+        </div>
+      </div>
+      <div class="col-3">
+        <strong>descarga nuestras app</strong>
+        <img src="../img/download_app.png" alt="">
+        <img src="../img/google_play.png" alt="">
+      </div>
+    </div>`
+
+    if (verificarExistenciaId('idFooterSecciones')){
+      document.getElementById("idFooterSecciones").innerHTML = footerSecciones;
+  } 
 
     function verificarExistenciaId(id) {
         // Intenta seleccionar el elemento por su ID

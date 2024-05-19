@@ -15,12 +15,8 @@
     text-align: center;
 }
 
-/* CSS 4 - Selectores avanzados y Animaciones. Selectores avanzados. 
-Animaciones con CSS. Incorporación de transformaciones y transiciones
-a elementos. Introducción Responsive Web Design.  --------------------------------*/
 
-/* Centra el texto que info sobre películas 
-y series ilimitadas */
+
 .d-flex {
     display: flex;
     justify-content: center;
@@ -37,7 +33,6 @@ y series ilimitadas */
     font-size: 1.2rem;
     font-weight: bolder;
     text-decoration: none;
-    /* Agregar efecto de botón presionado */
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -54,18 +49,11 @@ y series ilimitadas */
     font-weight: 800;
     margin-top: 2rem;
     margin-bottom: 3rem;
-    /* margin-bottom: 3rem; */
-    /* mask-image: linear-gradient(to bottom, rgba(0, 0, 200, 0.4), rgba(0, 0, 200, 1)); */
-    /* stroke: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 200, 1)), to(rgba(0, 0, 200, 1)));     */
-    /* stroke:rgba(0, 0, 200, 1) */
-    /* si funciona */
-    /* background: -webkit-linear-gradient(rgb(77, 149, 207), #93CBEB); */
-    /* background: linear-gradient(to bottom, rgba(0, 0, 200, 0.1), rgba(0, 0, 0, 200.9)); */
     background: linear-gradient(90deg, #93CBEB, rgb(255, 255, 255));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px black;
-    /* color: linear-gradient(to bottom, rgba(0, 0, 200, 0.4), rgba(0, 0, 200, 1)); */
+
 }
 
 .card-banner h2 {
