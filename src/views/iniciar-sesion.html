@@ -28,39 +28,42 @@
     <header class="header" id="idHeaderSecciones">
        <!-- Agregado por JS -->
     </header>
+   
+   
     <main class="main">
        <section id="banner-register" class="d-flex">
       <div class="card-banner container">
         <section id="form-wrapper">
-          <form action="#" method="post" novalidate id="form-register">
-            <h2>Iniciar Sesión</h2>
-          
+          <form action="" method="get">
+            <h2 class="tituloRegistrarse">Iniciar Sesión</h2>
             <div class="form-control">
-              <!-- <label for="email">Email</label> -->
-              <input class="controls" type="email" name="email" required id="email" placeholder="Ingrese su email">
+                <input class="controls" type="email" placeholder="Email" id="email" name="email">
+                <div class="error-text"></div>
             </div>
             <div class="form-control">
-              <!-- <label for="passw">Contraseña</label> -->
-              <input class="controls" type="password" name="name" required id="passw "
-                placeholder="Ingrese su Contraseña">
+                <input  class="controls" type="password" placeholder="Contraseña" id="password" name="password">
+                <div class="error-text"></div>
             </div>
-            
-            <button class="btn iniciarSesion" type="submit">Iniciar Sesión</button>
-           
-            <div class="form-help">
-              <a href="#">Registrarse</a>
+            <div class="contenedorBoton">
+            <button class="btn btnIniciarSesion" type="submit">Iniciar Sesión</button>
             </div>
-          </form>
+            <div class="form-terms">
+                <a id="ayuda" class="ayuda" href="registrarse.html">Registrarse</a>
+            </div>
+        </form>
         </section>
 
 
     </section>
 
     </main>
+
+
     <footer class="footer-container" id="idFooterSecciones">
        <!-- Agregado por JS -->
     </footer>
 
     <script src="../JS/index.js"></script>
+    <script src="../js/valida_iniciosesion.js"></script>
   </body>
 </html>

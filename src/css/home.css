@@ -47,6 +47,29 @@ h2 {
   text-align: center;
 }
 
+
+
+.error input:not(.check,.boton),.error select{
+    border: 1px solid #ff0000;
+}
+.error-text{
+    color: #ff0000;
+    font-size: 0.8rem;
+    margin-top:0px;
+    margin-bottom: 10px;
+}
+
+
+.btnIniciarSesion{
+
+    font-size: 1rem;
+    margin-left: 3.5rem;
+   
+
+}
+
+
+
 /* Extra large devices (1200px and up) */
 @media only screen and (min-width: 1367px) {
 
