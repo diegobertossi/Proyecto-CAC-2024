@@ -21,6 +21,9 @@ h2 {
     color: #fff;
     font-size: 2vw;
   }
+
+
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -84,8 +87,12 @@ h2 {
 
 /* TABLETS */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    h2 {
-        font-size: 3vw;
+    .card-banner h2 {
+        font-size: 1.5vh;
+        margin-top: 1.2vh;
+        margin-bottom: 1.7vh;
+  
+    
     }
 
 
@@ -106,13 +113,29 @@ h2 {
         padding: 0px 75px;
     }
 
+    .btn-Registrarse {
+        font-size: 2vh;
+    }
+
 
 }
 
 /* CELULARES */
 @media screen and (max-width: 767px) {
-    h2 {
-        font-size: 3vw;
+
+
+    .card-banner h1 {
+
+        margin-top: 1vh;;
+        margin-bottom: 1vh;
+
+    }
+    .card-banner h2 {
+        font-size: 1.1vh;
+        margin-top: 1vh;
+        margin-bottom: 1.1vh;
+  
+    
     }
 
     .h2-subtitle {
@@ -121,7 +144,7 @@ h2 {
 
 
     #banner {
-        height: 300px;
+        height: 350px;
     }
 
     #search {
@@ -139,6 +162,7 @@ h2 {
 
     .btn-Registrarse {
         font-size: 1vh;
+    
     }
 
     #form-wrapper {

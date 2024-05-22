@@ -48,7 +48,7 @@
     font-size: 5.2vw;
     font-weight: 800;
     margin-top: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     background: linear-gradient(90deg, #93CBEB, rgb(255, 255, 255));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -57,8 +57,9 @@
 }
 
 .card-banner h2 {
-    font-size: 1.5vw;
+    font-size: 0.9rem;
     font-weight: normal;
-    margin-top: 1rem;
+    margin-top: 0.6rem;
+    margin-bottom: 1.7rem;
 
 }
