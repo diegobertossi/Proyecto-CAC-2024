@@ -68,14 +68,7 @@
     flex-direction: column;
     justify-content: flex-end;
 }
-/* .movie-item-detail-v2 {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
-/* Estilos a los nombres de las películas que 
-están en la sección  */
+
 .movie-item-detail-title-v2:hover {
     color: var(--primary-color);
 }

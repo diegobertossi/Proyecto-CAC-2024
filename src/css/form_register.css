@@ -1,5 +1,5 @@
 #banner-register {
-    background-image: url("../../img/argentina-world.jpg");
+    background-image: url("../img/argentina-world.jpg");
     background-size: cover;
     background-position: top;
     height: 82.3vh;
@@ -126,7 +126,7 @@
 .form-help a{
     color: white;
 }
-/* --------------------- PARA EVALUAR CATEGORIA */
+
 .d-form {
     width: 100%;
     margin-bottom: 20px;

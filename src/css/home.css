@@ -1,43 +1,290 @@
-@import url("./partials/base.css");
-@import url('./icons.css');
-@import url("./partials/header.css");
-@import url("./partials/banner.css");
-@import url("./partials/galeria.css");
-@import url("./partials/productos.css");
-@import url("./partials/presentacion.css");
-@import url("./partials/footer.css");
-@import url("./test.css");
-@import url("./partials/form_register.css");
+@import url("./icons.css");
+@import url("./galeria.css");
+@import url("./productos.css");
+@import url("./presentacion.css");
+@import url("./footer.css");
+@import url("./form_register.css");
+
+:root {
+  --GradienteCelesteBlanco: linear-gradient(
+    180deg,
+    rgba(255, 255, 255) 0%,
+    rgba(117, 170, 219) 100%
+  );
+  --GradienteBlancoTop: linear-gradient(
+    0deg,
+    rgba(255, 255, 255) 10%,
+    rgba(117, 170, 219) 100%
+  );
+
+  --GradienteBlancoCeleste: linear-gradient(
+    90deg,
+    #74acdf 0%,
+    rgba(255, 255, 255) 100%
+  );
+  --celeste: rgba(117, 170, 219);
+  --celesteMasClaro: #3ac3e8;
+  --celesteTurquesa: #00d9dd;
+  --celesteClarisimo: #55ebbc;
+  --verde: #a7f691;
+  --amarillo: #f9f871;
+  --azulClaro: #002e55;
+
+  --bg-color: #fdede3;
+
+  --primary-font: #190eb4ec;
+  --doradoBandera: #fcbf49;
+  --secondary-color: #fdede3;
+  --third-color: #db4648;
+  --third-bis-color: #db4648f2;
+
+  --bg-input-color: hwb(9 1% 44% / 0.575);
+
+  --alto-btn-menu: 40px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(23, 23, 23);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--GradienteCelesteBlanco);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--GradienteBlancoCeleste);
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.1);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  75% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.header {
+  z-index: 10;
+  background: var(--GradienteBlancoTop);
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+}
+
+.listaNav {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+
+  align-items: center;
+  margin: 0;
+}
+
+.listaNav li .sub_menu {
+  position: relative;
+}
+
+.listaNav li .sub_menu_aux {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+
+  z-index: -1;
+
+  top: -100%;
+
+  transition: 0.6s;
+}
+.listaNav .sub_menu:hover .sub_menu_aux {
+  top: 100%;
+  overflow: visible;
+}
+.punto {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.listaNav li .dropdown-content {
+  position: absolute;
+
+  z-index: 9;
+
+  background: var(--GradienteCelesteBlanco);
+}
+.dropdown-content .lista {
+  width: 100%;
+}
+
+.header .listaNav li .dropdown-content li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  background: var(--GradienteBlancoTop);
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+#logo > a {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-decoration: none;
+  color: var(--azulClaro);
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-left: 2rem;
+}
+.logo-text {
+  text-shadow: 0 -1px 4px #fff, 0 -1px 10px #fff, 0 -10px 20px #fff,
+    0 -18px 40px blue;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+#logo:hover {
+  animation: heartbeat 2s infinite;
+}
+
+.listaNav > li {
+  position: relative;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.listaNav .lista,
+.linkNav_2 {
+  text-decoration: none;
+  color: var(--azulClaro);
+  font-weight: bold;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.listaNav .lista:hover {
+  color: var(--azulClaro);
+  transform: scale(0.95);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  border-radius: 8px;
+
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.linkNav {
+  padding: 0.5rem;
+}
+
+.linkNav .Login {
+  background-color: var(--celeste);
+  color: white;
+  border-radius: 5px;
+  padding: 0.5rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.listaItem {
+  display: flex;
+}
+.btn_menu {
+  display: none;
+  width: var(--alto-btn-menu);
+  height: var(--alto-btn-menu);
+  background-color: white;
+  font-size: 24px;
+  color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon_logo_container {
+  position: relative;
+}
+
+.icon_logo {
+  max-height: 30px;
+  display: flex;
+}
+
+.logo_logo_reflejo {
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  position: absolute;
+  left: 0;
+  top: 24px;
+  max-height: 30px;
+  transform: rotateX(120deg);
+}
 
 body {
-    background-color: var(--GradienteBlancoCeleste);
-    font-family: "Noto Serif", sans-serif;
-  }
-  
-  a {
-    text-decoration: none;
-  }
+  background-color: var(--GradienteBlancoCeleste);
+  font-family: "Noto Serif", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
 h2 {
-    color: #fff;
-    font-size: 2vw;
-  }
-
-
+  color: #fff;
+  font-size: 2vw;
+}
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .card-banner {
-    margin: 0 auto;
-    text-align: center;
-    padding: 0px 160px;
-  }
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card-banner {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0px 160px;
+}
 
 #galeria,
 #productos {
-
   text-align: center;
   padding: 3.5rem;
 }
@@ -50,157 +297,266 @@ h2 {
   text-align: center;
 }
 
-
-
-.error input:not(.check,.boton),.error select{
-    border: 1px solid #ff0000;
+.error input:not(.check, .boton),
+.error select {
+  border: 1px solid #ff0000;
 }
-.error-text{
-    color: #ff0000;
-    font-size: 0.8rem;
-    margin-top:0px;
-    margin-bottom: 10px;
+.error-text {
+  color: #ff0000;
+  font-size: 0.8rem;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.btnIniciarSesion {
+  font-size: 1rem;
+  margin-left: 3.5rem;
 }
 
 
-.btnIniciarSesion{
+#banner {
+    /* margin-top: 5rem; */
+    background-image: url("../img/argentina-world.jpg");
+    background-size: cover;
+    background-position: top;
+    height: 90vh;
+    box-shadow: inset 0 0 0 2000px rgba(84, 84, 84, 0.5);
 
-    font-size: 1rem;
-    margin-left: 3.5rem;
-   
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.btn-Registrarse {
+    background-color: var(--azulClaro);
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    margin-top: 5rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.btn-Registrarse:hover {
+    background-color: var(--celeste);
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.card-banner h1 {
+    color: #fff;
+    font-size: 5.2vw;
+    font-weight: 800;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(90deg, #93CBEB, rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px black;
 
 }
+
+.card-banner h2 {
+    font-size: 0.9rem;
+    font-weight: normal;
+    margin-top: 0.6rem;
+    margin-bottom: 1.7rem;
+
+}
+
+
 
 
 
 /* Extra large devices (1200px and up) */
 @media only screen and (min-width: 1367px) {
-
-
-    #banner {
-        height: 91.5vh;
-    }
+  #banner {
+    height: 91.5vh;
+  }
 }
-
-
-
 
 /* TABLETS */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .card-banner h2 {
-        font-size: 1.5vh;
-        margin-top: 1.2vh;
-        margin-bottom: 1.7vh;
-  
-    
-    }
+  .card-banner h2 {
+    font-size: 1.5vh;
+    margin-top: 1.2vh;
+    margin-bottom: 1.7vh;
+  }
 
+  #banner {
+    height: 400px;
+  }
 
-    #banner {
-        height: 400px;
-    }
+  #search {
+    height: 200px;
+  }
 
-    #search {
-        height: 200px;
-    }
+  .container {
+    max-width: 720px;
+  }
 
-    .container {
-        max-width: 720px;
+  .card-banner {
+    padding: 0px 75px;
+  }
 
-    }
-
-    .card-banner {
-        padding: 0px 75px;
-    }
-
-    .btn-Registrarse {
-        font-size: 2vh;
-    }
-
-
+  .btn-Registrarse {
+    font-size: 2vh;
+  }
 }
 
 /* CELULARES */
 @media screen and (max-width: 767px) {
+  .card-banner h1 {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+  .card-banner h2 {
+    font-size: 1.1vh;
+    margin-top: 1vh;
+    margin-bottom: 1.1vh;
+  }
 
+  .h2-subtitle {
+    font-size: 5vw;
+  }
 
-    .card-banner h1 {
+  #banner {
+    height: 350px;
+  }
 
-        margin-top: 1vh;;
-        margin-bottom: 1vh;
+  #search {
+    height: 200px;
+  }
 
-    }
-    .card-banner h2 {
-        font-size: 1.1vh;
-        margin-top: 1vh;
-        margin-bottom: 1.1vh;
-  
-    
-    }
+  .container {
+    max-width: 420px;
+  }
 
-    .h2-subtitle {
-        font-size: 5vw;
-    }
+  .card-banner {
+    margin-top: 50px;
+    padding: 0px 50px;
+  }
 
+  .btn-Registrarse {
+    font-size: 1vh;
+  }
 
-    #banner {
-        height: 350px;
-    }
+  #form-wrapper {
+    padding-left: 1rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgba(117, 170, 219, 0.7);
+    border-radius: 30px 2px;
+  }
 
-    #search {
-        height: 200px;
-    }
+  .controls {
+    font-size: 10px;
+  }
 
-    .container {
-        max-width: 420px;
-    }
+  .form-control {
+    padding: 2.5px;
+    font-size: 12px;
+  }
+  .btn {
+    font-size: 12px;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-family: "Noto Serif", sans-serif;
+    background-color: cornflowerblue;
+    color: white;
+    margin: 0.7rem;
+  }
 
-    .card-banner {
-        margin-top: 50px;
-        padding: 0px 50px;
-    }
-
-    .btn-Registrarse {
-        font-size: 1vh;
-    
-    }
-
-    #form-wrapper {
-        padding-left: 1rem;
-        padding-right: 1.5rem;
-        padding-bottom: 0.5rem;
-        background-color: rgba(117, 170, 219, 0.7);
-        border-radius: 30px 2px;
-    }
-
-
-    .controls {
-        font-size: 10px;
-    }
-
-    .form-control {
-
-        padding: 2.5px;
-        font-size: 12px;
-
-    }
-    .btn {
-        font-size: 12px;
-        padding: 0.5rem;
-        border-radius: 10px;
-        font-family: "Noto Serif", sans-serif;
-        background-color: cornflowerblue;
-        color: white;
-        margin: 0.7rem;
-    }
-
-    .form-help {
-        font-size: 0.8rem;
-        color: blanchedalmond;
-        font-family: "Noto Serif", sans-serif;
-    }
-
+  .form-help {
+    font-size: 0.8rem;
+    color: blanchedalmond;
+    font-family: "Noto Serif", sans-serif;
+  }
 }
 
+@media screen and (max-width: 480px) {
+  .logoTextoImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
+  #logo {
+    transform: scale(0.7);
+  }
+  .logo-text {
+    text-align: center;
+    font-size: 0.7 rem;
+  }
 
+  .header .listaNav .lista {
+    display: none;
+  }
+
+  .header .listaNav .contacto {
+    display: flex;
+  }
+
+  .header .listaNav .linkNav,
+  .header .listaNav ul .lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .header .listaNav .lista {
+    display: none;
+  }
+
+  .header .listaNav .contacto {
+    display: flex;
+  }
+
+  .header .listaNav .linkNav,
+  .header .listaNav ul .lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1123px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
