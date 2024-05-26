@@ -492,7 +492,9 @@ h2 {
   }
 
   .container {
-    max-width: 420px;
+    max-width: 20rem;
+    flex-direction: column;
+    margin-block: 1.5rem;
   }
 
   .card-banner {
@@ -536,6 +538,28 @@ h2 {
     font-family: "Noto Serif", sans-serif;
   }
 
+
+  #banner-register {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5rem;
+  }
+
+  #form-wrapper h2 {
+
+    font-size: 1.4rem;
+
+
+}
+
+#form-wrapper li {
+
+  font-size: 0.5em;
+}
 
 
 }
@@ -581,6 +605,89 @@ h2 {
   h2 {
     font-size: 1.5rem;
   }
+
+
+  .card-banner h1 {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+  .card-banner h2 {
+    font-size: 1.1vh;
+    margin-top: 1vh;
+    margin-bottom: 1.1vh;
+  }
+
+  .h2-subtitle {
+    font-size: 5vw;
+  }
+
+  #banner {
+    height: 350px;
+  }
+
+  #search {
+    height: 200px;
+  }
+
+  .container {
+    max-width: 20rem;
+    flex-direction: column;
+    margin-block: 1.5rem;
+  }
+
+  .card-banner {
+    margin-top: 50px;
+    padding: 0px 50px;
+  }
+
+  .btn-Registrarse {
+    font-size: 1vh;
+  }
+
+  #form-wrapper {
+    padding-left: 2rem;
+    padding-right: 2.5rem;
+    padding-bottom: 1rem;
+  
+  }
+
+  .controls {
+    font-size: 10px;
+  }
+
+  .form-control {
+    padding: 2.1px;
+    font-size: 10px;
+  }
+  .btn {
+    font-size: 10px;
+    padding: 0.4rem;
+    border-radius: 10px;
+    margin: 0.5rem;
+  }
+
+  .form-help {
+    font-size: 0.5rem;
+  }
+
+
+  #form-wrapper h2 {
+
+    font-size: 1.4rem;
+
+
+}
+
+#form-wrapper li {
+
+  font-size: 0.5em;
+}
+
+
 
 }
 
