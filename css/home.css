@@ -275,12 +275,14 @@ h2 {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  
 }
 
 .card-banner {
   margin: 0 auto;
   text-align: center;
   padding: 0px 160px;
+  
 }
 
 #galeria,
@@ -340,6 +342,15 @@ h2 {
     flex-wrap: wrap;
 }
 
+
+.banner-contacto{
+
+  display: flex;
+  
+
+  }
+
+ 
 .btn-Registrarse {
     background-color: var(--azulClaro);
     color: #ffffff;
@@ -379,6 +390,9 @@ h2 {
     margin-bottom: 1.7rem;
 
 }
+
+
+
 
 
 /* Extra large devices (1200px and up) */
