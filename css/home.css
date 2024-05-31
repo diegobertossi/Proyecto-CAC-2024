@@ -314,7 +314,7 @@ h2 {
 }
 
 #banner {
-  /* margin-top: 5rem; */
+ 
   background-image: url("../img/argentina-world.jpg");
   background-size: cover;
   background-position: top;
@@ -379,16 +379,13 @@ h2 {
 }
 
 
-
-
-/* Extra large devices (1200px and up) */
 @media only screen and (min-width: 1367px) {
   #banner {
-    height: 91.5vh;
+    height: 93.5vh;
   }
 }
 
-/* TABLETS */
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .card-banner h2 {
     font-size: 1.5vh;
@@ -502,11 +499,7 @@ h2 {
   .controls {
     font-size: 10px;
     max-width: 13rem;
-   
-
   }
-
-
 
   .form-control {
     padding: 2.5px;
